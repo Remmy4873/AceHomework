@@ -1,0 +1,489 @@
+/* ============ BASE STYLES ============ */
+.math-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 0;
+  margin: 0;
+}
+
+.math-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============ HERO SECTION ============ */
+.math-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  color: white;
+  border-radius: 8px;
+  margin: 2rem 0 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.math-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  opacity: 0.9;
+}
+
+.hero-subtitle strong {
+  color: #ffd700;
+}
+
+.hero-badges {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  backdrop-filter: blur(5px);
+}
+
+/* ============ MATH SERVICES SECTION ============ */
+.math-services-section {
+  margin: 4rem 0;
+}
+
+.math-services-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+  position: relative;
+}
+
+.math-services-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #18bc9c;
+}
+
+.math-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.math-service-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.math-service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 1rem;
+}
+
+.service-icon {
+  font-size: 1.8rem;
+  margin-top: 3px;
+}
+
+.price-tag {
+  background: #18bc9c;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.math-service-card h3 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.service-details {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.service-details h4 {
+  color: #18bc9c;
+  margin: 1.2rem 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.topics-list {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.topics-list li {
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+
+.topics-list li:before {
+  content: '•';
+  color: #18bc9c;
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+/* ============ PROBLEM TYPES SECTION ============ */
+.problem-types-section {
+  margin: 5rem 0;
+}
+
+.problem-types-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+}
+
+.problem-types-accordion {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.problem-type-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #2c3e50;
+}
+
+.problem-type-card h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.coverage-list {
+  padding-left: 1.5rem;
+}
+
+.coverage-list li {
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.coverage-list li:before {
+  content: '✓';
+  color: #18bc9c;
+  position: absolute;
+  left: -1.5rem;
+}
+
+.problem-footer {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* ============ PRICING SECTION ============ */
+.pricing-section {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.pricing-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+}
+
+.pricing-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-card h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #18bc9c;
+  margin: 1rem 0;
+}
+
+.price span {
+  font-size: 1rem;
+  color: #666;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  text-align: left;
+}
+
+.pricing-features li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.pricing-features li:before {
+  content: '✓';
+  color: #18bc9c;
+  position: absolute;
+  left: 0;
+}
+.trigonometry-section {
+  margin: 5rem 0;
+}
+
+.trigonometry-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+  position: relative;
+}
+
+.trigonometry-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #18bc9c;
+}
+
+.trigonometry-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.trigonometry-card, .trigonometry-example {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+}
+
+.trigonometry-card h3, .trigonometry-example h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.trig-topics {
+  display: flex;
+  gap: 2rem;
+}
+
+.trig-column {
+  flex: 1;
+}
+
+.trig-column h4 {
+  color: #18bc9c;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.trig-column ul {
+  padding-left: 1.2rem;
+}
+
+.trig-column li {
+  margin-bottom: 0.6rem;
+  position: relative;
+}
+
+.trig-column li:before {
+  content: '•';
+  color: #18bc9c;
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+.example-problem {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border-left: 4px solid #3498db;
+}
+
+.example-problem p {
+  margin: 0.5rem 0;
+}
+
+.example-problem strong {
+  color: #2c3e50;
+}
+
+/* ============ CTA SECTION ============ */
+.cta-section {
+  background: linear-gradient(135deg, #2c3e50 0%, #18bc9c 100%);
+  border-radius: 8px;
+  padding: 3rem;
+  margin: 4rem 0;
+  color: white;
+  text-align: center;
+}
+
+.cta-content h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.cta-content p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.primary-cta, .secondary-cta {
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.primary-cta {
+  background: white;
+  color: #2c3e50;
+}
+
+.primary-cta:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-cta {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.secondary-cta:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* ============ RESPONSIVE STYLES ============ */
+@media (max-width: 768px) {
+  .math-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .math-services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-section {
+    padding: 2rem 1rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .primary-cta, .secondary-cta {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pricing-card {
+    padding: 1.5rem;
+  }
+
+  .price {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .math-hero {
+    padding: 3rem 1rem;
+  }
+  
+  .math-hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .math-services-section h2, 
+  .problem-types-section h2,
+  .pricing-section h2 {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 768px) {
+  .trigonometry-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .trig-topics {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

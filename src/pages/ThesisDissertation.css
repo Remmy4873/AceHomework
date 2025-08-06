@@ -1,0 +1,441 @@
+/* ============ BASE STYLES ============ */
+.thesis-dissertation-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 0;
+  margin: 0;
+}
+
+.thesis-dissertation-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============ HERO SECTION ============ */
+.service-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  color: white;
+  border-radius: 8px;
+  margin: 2rem 0 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  opacity: 0.9;
+}
+
+.hero-subtitle strong {
+  color: #ffd700;
+}
+
+.hero-badges {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  backdrop-filter: blur(5px);
+}
+
+/* ============ SERVICE TYPES SECTION ============ */
+.service-types-section {
+  margin: 4rem 0;
+}
+
+.service-types-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+  position: relative;
+}
+
+.service-types-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #18bc9c;
+}
+
+.service-types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.service-type-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.service-type-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.type-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 1rem;
+}
+
+.type-icon {
+  font-size: 1.8rem;
+  margin-top: 3px;
+}
+
+.price-tag {
+  background: #18bc9c;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.service-type-card h3 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.type-details {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.type-details h4 {
+  color: #18bc9c;
+  margin: 1.2rem 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.format-list, .features-list {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.format-list li, .features-list li {
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+
+.format-list li:before {
+  content: '•';
+  color: #18bc9c;
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+/* ============ FORMATTING SECTION ============ */
+.formatting-section {
+  margin: 5rem 0;
+}
+
+.formatting-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+}
+
+.formatting-accordion {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.format-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #2c3e50;
+}
+
+.format-card h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.requirements-list {
+  padding-left: 1.5rem;
+}
+
+.requirements-list li {
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.requirements-list li:before {
+  content: '✓';
+  color: #18bc9c;
+  position: absolute;
+  left: -1.5rem;
+}
+
+.format-footer {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* ============ PROCESS SECTION ============ */
+.process-section {
+  margin: 5rem 0;
+}
+
+.process-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.process-step {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  position: relative;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background: #18bc9c;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 auto 1rem;
+}
+
+.process-step h3 {
+  color: #2c3e50;
+  margin: 0.5rem 0;
+}
+
+.process-step p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ============ PRICING SECTION ============ */
+.pricing-section {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.pricing-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+}
+
+.pricing-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-card h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #18bc9c;
+  margin: 1rem 0;
+}
+
+.price span {
+  font-size: 1rem;
+  color: #666;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  text-align: left;
+}
+
+.pricing-features li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.pricing-features li:before {
+  content: '✓';
+  color: #18bc9c;
+  position: absolute;
+  left: 0;
+}
+
+/* ============ CTA SECTION ============ */
+.cta-section {
+  background: linear-gradient(135deg, #2c3e50 0%, #18bc9c 100%);
+  border-radius: 8px;
+  padding: 3rem;
+  margin: 4rem 0;
+  color: white;
+  text-align: center;
+}
+
+.cta-content h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.cta-content p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.primary-cta, .secondary-cta {
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.primary-cta {
+  background: white;
+  color: #2c3e50;
+}
+
+.primary-cta:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-cta {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.secondary-cta:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* ============ RESPONSIVE STYLES ============ */
+@media (max-width: 768px) {
+  .service-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .service-types-grid, .process-steps {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-section {
+    padding: 2rem 1rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .primary-cta, .secondary-cta {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pricing-card {
+    padding: 1.5rem;
+  }
+
+  .price {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-hero {
+    padding: 3rem 1rem;
+  }
+  
+  .service-hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .service-types-section h2, 
+  .formatting-section h2,
+  .process-section h2,
+  .pricing-section h2 {
+    font-size: 1.7rem;
+  }
+}

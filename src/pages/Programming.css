@@ -1,0 +1,649 @@
+/* ============ BASE STYLES ============ */
+.programming-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 0;
+  margin: 0;
+}
+
+.programming-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============ HERO SECTION ============ */
+.programming-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  color: white;
+  border-radius: 8px;
+  margin: 2rem 0 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.programming-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  opacity: 0.9;
+}
+
+.hero-subtitle strong {
+  color: #ffd700;
+}
+
+.hero-badges {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  backdrop-filter: blur(5px);
+}
+
+/* ============ PROGRAMMING LANGUAGES SECTION ============ */
+.programming-languages-section {
+  margin: 4rem 0;
+}
+
+.programming-languages-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  position: relative;
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  color: #555;
+}
+
+.programming-languages-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #18bc9c;
+}
+
+.programming-languages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.programming-language-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.programming-language-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.language-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 1rem;
+}
+
+.language-icon {
+  font-size: 1.8rem;
+  margin-top: 3px;
+}
+
+.price-tag {
+  background: #18bc9c;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.programming-language-card h3 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.language-details {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.language-details h4 {
+  color: #18bc9c;
+  margin: 1.2rem 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.topics-list {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.topics-list li {
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+
+.topics-list li:before {
+  content: '•';
+  color: #18bc9c;
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+.difficulty-level {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed #eee;
+}
+
+/* ============ ASSIGNMENTS SECTION ============ */
+.assignments-section {
+  margin: 5rem 0;
+}
+
+.assignments-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.assignments-accordion {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.assignment-type-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #2c3e50;
+}
+
+.assignment-type-card h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.features-list {
+  padding-left: 1.5rem;
+}
+
+.features-list li {
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.features-list li:before {
+  content: '✓';
+  color: #18bc9c;
+  position: absolute;
+  left: -1.5rem;
+}
+
+.assignment-footer {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* ============ WEBDEV SECTION ============ */
+.webdev-section {
+  margin: 5rem 0;
+  background-color: #f8fafc;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+}
+
+.webdev-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.webdev-tabs {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.webdev-category {
+  margin-bottom: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.webdev-category-title {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-top: 0;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.webdev-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.webdev-tool-card {
+  background: #f9f9f9;
+  border-radius: 6px;
+  padding: 1.5rem;
+  border-left: 4px solid #3498db;
+}
+
+.tool-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.tool-header h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.proficiency-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.proficiency-badge.expert {
+  background: #18bc9c;
+  color: white;
+}
+
+.proficiency-badge.advanced {
+  background: #3498db;
+  color: white;
+}
+
+.proficiency-badge.intermediate {
+  background: #f39c12;
+  color: white;
+}
+
+.tool-details h5 {
+  color: #18bc9c;
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+}
+
+.tool-uses {
+  padding-left: 1.2rem;
+}
+
+.tool-uses li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.tool-uses li:before {
+  content: '•';
+  color: #3498db;
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+.webdev-benefits {
+  background: #f0f7fb;
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+}
+
+.webdev-benefits h4 {
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.webdev-benefits ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.webdev-benefits li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.webdev-benefits li:before {
+  content: '✓';
+  color: #18bc9c;
+  position: absolute;
+  left: 0;
+}
+
+/* ============ CODE EXAMPLES SECTION ============ */
+.code-examples-section {
+  margin: 5rem 0;
+}
+
+.code-examples-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+}
+
+.code-examples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.code-example-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #e74c3c;
+}
+
+.example-header {
+  margin-bottom: 1.5rem;
+}
+
+.language-tag {
+  display: inline-block;
+  background: #2c3e50;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.code-example-card h3 {
+  color: #2c3e50;
+  margin: 0.5rem 0 0;
+  font-size: 1.3rem;
+}
+
+.code-snippet {
+  background: #282c34;
+  color: #abb2bf;
+  padding: 1.5rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+.code-explanation {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed #eee;
+}
+
+.code-explanation h4 {
+  color: #18bc9c;
+  margin-top: 0;
+}
+
+/* ============ PRICING SECTION ============ */
+.pricing-section {
+  margin: 5rem 0;
+}
+
+.pricing-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  border-top: 4px solid #18bc9c;
+}
+
+.pricing-card h3 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #18bc9c;
+  margin: 1rem 0;
+}
+
+.price span {
+  font-size: 1rem;
+  color: #666;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  text-align: left;
+}
+
+.pricing-features li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.pricing-features li:before {
+  content: '✓';
+  color: #18bc9c;
+  position: absolute;
+  left: 0;
+}
+
+/* ============ CTA SECTION ============ */
+.cta-section {
+  background: linear-gradient(135deg, #2c3e50 0%, #18bc9c 100%);
+  border-radius: 8px;
+  padding: 3rem;
+  margin: 4rem 0;
+  color: white;
+  text-align: center;
+}
+
+.cta-content h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.cta-content p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.usa-guarantee {
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.primary-cta, .secondary-cta {
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.primary-cta {
+  background: white;
+  color: #2c3e50;
+}
+
+.primary-cta:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-cta {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.secondary-cta:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* ============ RESPONSIVE STYLES ============ */
+@media (max-width: 768px) {
+  .programming-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .programming-languages-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .code-examples-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .webdev-tools-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .webdev-benefits ul {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-section {
+    padding: 2rem 1rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .primary-cta, .secondary-cta {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .programming-hero {
+    padding: 3rem 1rem;
+  }
+  
+  .programming-hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .programming-languages-section h2, 
+  .assignments-section h2,
+  .webdev-section h2,
+  .code-examples-section h2,
+  .pricing-section h2 {
+    font-size: 1.7rem;
+  }
+  
+  .webdev-section {
+    padding: 2rem 1rem;
+  }
+  
+  .webdev-category {
+    padding: 1.5rem;
+  }
+  
+  .code-snippet {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
