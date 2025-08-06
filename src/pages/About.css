@@ -122,12 +122,15 @@
   font-size: 0.9rem;
 }
 
-/* ============ SERVICES SECTION ============ */
-.services-section {
+/* ============ FEATURES SECTION ============ */
+.features-section {
   margin: 5rem 0;
+  background-color: #f8fafc;
+  padding: 3rem 2rem;
+  border-radius: 10px;
 }
 
-.services-section h2 {
+.features-section h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -141,130 +144,7 @@
   color: #555;
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.service-card {
-  background: white;
-  border-radius: 8px;
-  padding: 2rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  border-top: 4px solid #18bc9c;
-}
-
-.service-card h3 {
-  color: #2c3e50;
-  margin-top: 0;
-  font-size: 1.3rem;
-}
-
-.service-card ul {
-  padding-left: 1.2rem;
-}
-
-.service-card li {
-  margin-bottom: 0.8rem;
-  position: relative;
-}
-
-.service-card li:before {
-  content: '•';
-  color: #18bc9c;
-  font-weight: bold;
-  position: absolute;
-  left: -1rem;
-}
-
-/* ============ TEAM SECTION ============ */
-.team-section {
-  margin: 5rem 0;
-  background-color: #f8fafc;
-  padding: 3rem 2rem;
-  border-radius: 10px;
-}
-
-.team-section h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #2c3e50;
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.team-card {
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.team-card-image {
-  height: 250px;
-  overflow: hidden;
-}
-
-.team-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.team-card:hover .team-card-image img {
-  transform: scale(1.05);
-}
-
-.team-card-content {
-  padding: 1.5rem;
-}
-
-.team-card h3 {
-  color: #2c3e50;
-  margin: 0.5rem 0 0;
-}
-
-.team-role {
-  color: #3498db;
-  font-weight: 600;
-  margin: 0.5rem 0;
-}
-
-.team-expertise {
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px dashed #eee;
-  font-size: 0.9rem;
-}
-
-/* ============ VALUES SECTION ============ */
-.values-section {
-  margin: 5rem 0;
-}
-
-.values-section h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2.5rem;
-  color: #2c3e50;
-}
-
-.values-grid {
+.features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
@@ -272,18 +152,76 @@
   margin: 0 auto;
 }
 
-.value-card {
+.feature-card {
   background: white;
   border-radius: 8px;
   padding: 2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   text-align: center;
-  border-left: 4px solid #3498db;
+  transition: transform 0.3s ease;
 }
 
-.value-card h3 {
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: #2c3e50;
+  margin: 1rem 0;
+}
+
+/* ============ SUBJECTS SECTION ============ */
+.subjects-section {
+  margin: 5rem 0;
+}
+
+.subjects-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.subject-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-top: 4px solid #18bc9c;
+}
+
+.subject-card h3 {
   color: #2c3e50;
   margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.subject-card ul {
+  padding-left: 1.2rem;
+}
+
+.subject-card li {
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.subject-card li:before {
+  content: '•';
+  color: #18bc9c;
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
 }
 
 /* ============ CTA SECTION ============ */
@@ -365,11 +303,8 @@
     flex-direction: column;
   }
   
-  .services-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  .team-grid {
+  .subjects-grid,
+  .features-grid {
     grid-template-columns: 1fr 1fr;
   }
   
@@ -398,17 +333,13 @@
   }
   
   .mission-section h2,
-  .services-section h2,
-  .team-section h2,
-  .values-section h2 {
+  .features-section h2,
+  .subjects-section h2 {
     font-size: 1.7rem;
   }
   
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .team-grid {
+  .subjects-grid,
+  .features-grid {
     grid-template-columns: 1fr;
   }
   

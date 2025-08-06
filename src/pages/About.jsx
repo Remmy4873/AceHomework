@@ -9,7 +9,7 @@ const About = () => {
     "@type": "EducationalOrganization",
     "name": "AcademicPro",
     "url": "https://yourdomain.com",
-    "description": "Professional academic assistance for US students across all disciplines and education levels.",
+    "description": "Professional assignment completion service for US students to achieve top grades on Canvas submissions.",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "US"
@@ -20,41 +20,37 @@ const About = () => {
     }
   };
 
-  const teamMembers = [
+  const serviceFeatures = [
     {
-      name: "Dr. Sarah Johnson",
-      role: "Chief Academic Officer",
-      bio: "PhD in Education from Stanford University with 15 years of teaching experience at the university level.",
-      expertise: "Academic Writing, Research Methodology"
+      title: "Canvas Submission Ready",
+      description: "We format all assignments specifically for Canvas LMS submission requirements",
+      icon: "📤"
     },
     {
-      name: "Prof. Michael Chen",
-      role: "Head of STEM Tutoring",
-      bio: "Former MIT professor specializing in engineering and computer science education.",
-      expertise: "Engineering, Computer Science, Mathematics"
+      title: "Guaranteed Quality",
+      description: "Expert-written assignments designed to earn top grades in US institutions",
+      icon: "🏆"
     },
     {
-      name: "Dr. Emily Rodriguez",
-      role: "Humanities Department Lead",
-      bio: "Harvard graduate with extensive experience in liberal arts curriculum development.",
-      expertise: "Literature, History, Philosophy"
+      title: "Direct Submission",
+      description: "Option to have us submit directly to your Canvas course with your credentials",
+      icon: "🔑"
     },
     {
-      name: "James Wilson",
-      role: "Student Success Coordinator",
-      bio: "Dedicated to ensuring every student receives personalized support for their academic journey.",
-      expertise: "Academic Planning, Study Strategies"
+      title: "24/7 Deadline Support",
+      description: "Last-minute help available for urgent Canvas submissions",
+      icon: "⏰"
     }
   ];
 
   return (
     <>
       <Helmet>
-        <title>About AcademicPro | Trusted Academic Help for US Students</title>
-        <meta name="description" content="AcademicPro provides professional academic assistance to US students across all disciplines. Learn about our mission, team, and commitment to academic excellence." />
-        <meta name="keywords" content="about academic help, US student assistance, academic writing help, homework help USA, tutoring services, academic support" />
-        <meta property="og:title" content="About AcademicPro | Academic Help for American Students" />
-        <meta property="og:description" content="Trusted academic assistance service helping US students succeed across all disciplines and education levels." />
+        <title>About AcademicPro | Premium Assignment Help for US Students</title>
+        <meta name="description" content="AcademicPro completes assignments for US students, delivering Canvas-ready submissions for guaranteed better grades." />
+        <meta name="keywords" content="Canvas assignment help, do my homework, assignment writing service, USA student help, guaranteed grades" />
+        <meta property="og:title" content="About AcademicPro | Assignment Completion Service" />
+        <meta property="og:description" content="We complete and submit Canvas assignments for US students to improve grades." />
         <meta property="og:url" content="https://yourdomain.com/about" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
@@ -64,141 +60,111 @@ const About = () => {
         <article className="about-container">
           <header className="about-hero">
             <h1>About AcademicPro</h1>
-            <p className="hero-subtitle">Empowering US Students to Achieve Academic Excellence</p>
+            <p className="hero-subtitle">Premium Assignment Completion Service for US Students</p>
             <div className="hero-badges">
-              <span className="badge">5000+ Students Helped</span>
-              <span className="badge">100+ Academic Disciplines</span>
-              <span className="badge">US-Based Experts</span>
+              <span className="badge">A+ Quality Work</span>
+              <span className="badge">Canvas Experts</span>
+              <span className="badge">Direct Submission</span>
             </div>
           </header>
 
           <section className="mission-section" aria-labelledby="mission-heading">
             <div className="mission-content">
               <div className="mission-text">
-                <h2 id="mission-heading">Our Mission</h2>
-                <p>At AcademicPro, we're dedicated to providing comprehensive academic support to students across the United States. Whether you're in high school, college, or pursuing advanced degrees, our team of experienced educators and subject matter experts is here to help you succeed.</p>
-                <p>We understand the unique challenges faced by American students in today's competitive academic environment. Our services are tailored to meet the specific requirements of US educational institutions while fostering independent learning and critical thinking skills.</p>
+                <h2 id="mission-heading">Our Service</h2>
+                <p>AcademicPro specializes in completing academic assignments for US students who need help maintaining or improving their grades. We provide ready-to-submit work formatted specifically for Canvas LMS requirements.</p>
+                <p>Our team of subject matter experts delivers high-quality assignments that meet your professor's requirements, helping you achieve better grades without the stress of tight deadlines or complex coursework.</p>
                 <div className="mission-stats">
                   <div className="stat-item">
-                    <div className="stat-number">98%</div>
-                    <div className="stat-label">Student Satisfaction</div>
+                    <div className="stat-number">97%</div>
+                    <div className="stat-label">Grade Improvement</div>
+                  </div>
+                  <div className="stat-item">
+                    <div className="stat-number">100%</div>
+                    <div className="stat-label">Canvas Compatible</div>
                   </div>
                   <div className="stat-item">
                     <div className="stat-number">24/7</div>
-                    <div className="stat-label">Support Availability</div>
-                  </div>
-                  <div className="stat-item">
-                    <div className="stat-number">50+</div>
-                    <div className="stat-label">US Colleges Supported</div>
+                    <div className="stat-label">Deadline Support</div>
                   </div>
                 </div>
               </div>
               <div className="mission-image">
-                <img src="/images/about-mission.jpg" alt="Diverse group of students studying together" loading="lazy" />
+                <img src="/images/canvas-submission.jpg" alt="Canvas assignment submission interface" loading="lazy" />
               </div>
             </div>
           </section>
 
-          <section className="services-section" aria-labelledby="services-heading">
-            <h2 id="services-heading">How We Help US Students</h2>
-            <p className="section-intro">Comprehensive academic support across all disciplines and education levels:</p>
-            <div className="services-grid">
-              <div className="service-card">
-                <h3>High School Students</h3>
-                <ul>
-                  <li>College prep assistance</li>
-                  <li>AP course support</li>
-                  <li>Standardized test preparation</li>
-                  <li>Essay writing help</li>
-                </ul>
-              </div>
-              <div className="service-card">
-                <h3>Undergraduates</h3>
-                <ul>
-                  <li>Course-specific tutoring</li>
-                  <li>Research paper assistance</li>
-                  <li>STEM problem solving</li>
-                  <li>Thesis statement development</li>
-                </ul>
-              </div>
-              <div className="service-card">
-                <h3>Graduate Students</h3>
-                <ul>
-                  <li>Thesis/dissertation support</li>
-                  <li>Literature review assistance</li>
-                  <li>Statistical analysis help</li>
-                  <li>Publication preparation</li>
-                </ul>
-              </div>
-              <div className="service-card">
-                <h3>Working Professionals</h3>
-                <ul>
-                  <li>Continuing education support</li>
-                  <li>Professional certification prep</li>
-                  <li>Business writing assistance</li>
-                  <li>Technical documentation help</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <section className="team-section" aria-labelledby="team-heading">
-            <h2 id="team-heading">Meet Our Academic Team</h2>
-            <p className="section-intro">US-based educators and subject matter experts:</p>
-            <div className="team-grid">
-              {teamMembers.map((member, index) => (
-                <div key={index} className="team-card" itemScope itemType="https://schema.org/Person">
-                  <div className="team-card-image">
-                    <img src={`/images/team-${index+1}.jpg`} alt={`${member.name}, ${member.role}`} loading="lazy" itemProp="image" />
-                  </div>
-                  <div className="team-card-content">
-                    <h3 itemProp="name">{member.name}</h3>
-                    <p className="team-role" itemProp="jobTitle">{member.role}</p>
-                    <p itemProp="description">{member.bio}</p>
-                    <div className="team-expertise">
-                      <strong>Expertise:</strong> <span itemProp="knowsAbout">{member.expertise}</span>
-                    </div>
-                  </div>
+          <section className="features-section" aria-labelledby="features-heading">
+            <h2 id="features-heading">How Our Service Works</h2>
+            <p className="section-intro">We make getting better grades through Canvas submissions simple:</p>
+            <div className="features-grid">
+              {serviceFeatures.map((feature, index) => (
+                <div key={index} className="feature-card">
+                  <div className="feature-icon">{feature.icon}</div>
+                  <h3>{feature.title}</h3>
+                  <p>{feature.description}</p>
                 </div>
               ))}
             </div>
           </section>
 
-          <section className="values-section">
-            <h2>Our Academic Values</h2>
-            <div className="values-grid">
-              <div className="value-card">
-                <h3>Academic Integrity</h3>
-                <p>We uphold the highest standards of academic honesty while providing support that enhances learning.</p>
+          <section className="subjects-section" aria-labelledby="subjects-heading">
+            <h2 id="subjects-heading">Subjects We Cover</h2>
+            <p className="section-intro">Comprehensive assignment help across all academic disciplines:</p>
+            <div className="subjects-grid">
+              <div className="subject-card">
+                <h3>Business & Economics</h3>
+                <ul>
+                  <li>Case studies</li>
+                  <li>Financial analyses</li>
+                  <li>Business plans</li>
+                  <li>Market research</li>
+                </ul>
               </div>
-              <div className="value-card">
-                <h3>Personalized Support</h3>
-                <p>Every student receives customized assistance tailored to their specific needs and learning style.</p>
+              <div className="subject-card">
+                <h3>STEM Fields</h3>
+                <ul>
+                  <li>Lab reports</li>
+                  <li>Programming assignments</li>
+                  <li>Math problem sets</li>
+                  <li>Engineering projects</li>
+                </ul>
               </div>
-              <div className="value-card">
-                <h3>US Curriculum Focus</h3>
-                <p>Our experts are well-versed in American educational standards and requirements.</p>
+              <div className="subject-card">
+                <h3>Humanities</h3>
+                <ul>
+                  <li>Essays & research papers</li>
+                  <li>Literature analyses</li>
+                  <li>History papers</li>
+                  <li>Philosophy essays</li>
+                </ul>
               </div>
-              <div className="value-card">
-                <h3>Confidentiality</h3>
-                <p>We maintain strict privacy standards to protect your academic information.</p>
+              <div className="subject-card">
+                <h3>Social Sciences</h3>
+                <ul>
+                  <li>Psychology reports</li>
+                  <li>Sociology papers</li>
+                  <li>Political science essays</li>
+                  <li>Annotated bibliographies</li>
+                </ul>
               </div>
             </div>
           </section>
 
           <section className="cta-section">
             <div className="cta-content">
-              <h2>Ready to Elevate Your Academic Performance?</h2>
-              <p>Join thousands of US students who have achieved their academic goals with our help.</p>
+              <h2>Need Better Grades This Semester?</h2>
+              <p>Let our experts handle your Canvas assignments while you focus on what matters most.</p>
               <div className="cta-buttons">
-                <Link to="/services" className="primary-cta">
-                  Explore Our Services
+                <Link to="/order" className="primary-cta">
+                  Order Assignment Help
                 </Link>
                 <Link to="/contact" className="secondary-cta">
-                  Contact Our Team
+                  Ask About Submissions
                 </Link>
               </div>
-              <p className="usa-guarantee">🇺🇸 Proudly serving students across the United States 🇺🇸</p>
+              <p className="usa-guarantee">🇺🇸 Exclusive service for US college students 🇺🇸</p>
             </div>
           </section>
         </article>
