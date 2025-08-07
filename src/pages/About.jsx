@@ -90,7 +90,7 @@ const About = () => {
                 </div>
               </div>
               <div className="mission-image">
-                <img src="/images/canvas-submission.jpg" alt="Canvas assignment submission interface" loading="lazy" />
+                <img src="https://res.cloudinary.com/dqtzbgvug/image/upload/v1754553297/mlxhgiabt6zzvgkb977q.jpg" alt="Canvas assignment submission interface" loading="lazy" />
               </div>
             </div>
           </section>

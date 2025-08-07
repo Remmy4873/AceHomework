@@ -22,6 +22,7 @@ import Services from './pages/Services';
 import ThesisDissertation from './pages/ThesisDissertation';
 import NotFound from './pages/NotFound';
 import ScrollToTop from './components/ScrollToTop';
+import Footer from './components/Footer'; // Import the Footer component
 import './App.css';
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
           {/* 404 Page */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer /> {/* Add the Footer component here */}
       </Router>
     </HelmetProvider>
   );
