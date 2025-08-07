@@ -175,7 +175,7 @@
   border-top: 1px dashed #eee;
 }
 
-/* ============ ASSIGNMENTS SECTION ============ */
+/* ============ ASSIGNMENTS SECTION (2x2 GRID) ============ */
 .assignments-section {
   margin: 5rem 0;
 }
@@ -187,21 +187,23 @@
   color: #2c3e50;
 }
 
-.assignments-accordion {
-  max-width: 900px;
+.assignments-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.assignment-type-card {
+.assignment-grid-card {
   background: white;
   border-radius: 8px;
   padding: 2rem;
-  margin-bottom: 1.5rem;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
   border-left: 4px solid #2c3e50;
 }
 
-.assignment-type-card h3 {
+.assignment-grid-card h3 {
   color: #2c3e50;
   margin-top: 0;
   font-size: 1.5rem;
@@ -612,6 +614,11 @@
   }
 
   .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Assignment grid responsive */
+  .assignments-grid-container {
     grid-template-columns: 1fr;
   }
 }

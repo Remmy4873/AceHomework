@@ -172,26 +172,42 @@
   font-size: 2rem;
   margin-bottom: 2.5rem;
   color: #2c3e50;
+  position: relative;
+}
+
+.problem-types-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #18bc9c;
 }
 
 .problem-types-accordion {
-  max-width: 900px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  padding: 0 1rem;
 }
 
 .problem-type-card {
   background: white;
   border-radius: 8px;
   padding: 2rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-  border-left: 4px solid #2c3e50;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+  width: calc(33.333% - 1.34rem);
+  min-width: 280px;
 }
 
 .problem-type-card h3 {
   color: #2c3e50;
   margin-top: 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .coverage-list {
@@ -216,64 +232,7 @@
   border-top: 1px solid #f0f0f0;
 }
 
-/* ============ PRICING SECTION ============ */
-.pricing-section {
-  margin: 5rem 0;
-  text-align: center;
-}
-
-.pricing-section h2 {
-  font-size: 2rem;
-  margin-bottom: 2.5rem;
-  color: #2c3e50;
-}
-
-.pricing-card {
-  background: white;
-  border-radius: 8px;
-  padding: 2.5rem;
-  max-width: 500px;
-  margin: 0 auto;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-}
-
-.pricing-card h3 {
-  color: #2c3e50;
-  font-size: 1.5rem;
-  margin-top: 0;
-}
-
-.price {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #18bc9c;
-  margin: 1rem 0;
-}
-
-.price span {
-  font-size: 1rem;
-  color: #666;
-}
-
-.pricing-features {
-  list-style: none;
-  padding: 0;
-  margin: 2rem 0 0;
-  text-align: left;
-}
-
-.pricing-features li {
-  padding: 0.5rem 0;
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-.pricing-features li:before {
-  content: '✓';
-  color: #18bc9c;
-  position: absolute;
-  left: 0;
-}
+/* ============ TRIGONOMETRY SECTION ============ */
 .trigonometry-section {
   margin: 5rem 0;
 }
@@ -366,6 +325,65 @@
   color: #2c3e50;
 }
 
+/* ============ PRICING SECTION ============ */
+.pricing-section {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.pricing-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+}
+
+.pricing-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-card h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #18bc9c;
+  margin: 1rem 0;
+}
+
+.price span {
+  font-size: 1rem;
+  color: #666;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  text-align: left;
+}
+
+.pricing-features li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.pricing-features li:before {
+  content: '✓';
+  color: #18bc9c;
+  position: absolute;
+  left: 0;
+}
+
 /* ============ CTA SECTION ============ */
 .cta-section {
   background: linear-gradient(135deg, #2c3e50 0%, #18bc9c 100%);
@@ -426,6 +444,27 @@
 }
 
 /* ============ RESPONSIVE STYLES ============ */
+@media (max-width: 1024px) {
+  .problem-types-accordion {
+    gap: 1.5rem;
+  }
+  .problem-type-card {
+    width: calc(33.333% - 1rem);
+    padding: 1.8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .problem-types-accordion {
+    flex-wrap: wrap;
+  }
+  .problem-type-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 768px) {
   .math-hero h1 {
     font-size: 2rem;
@@ -437,6 +476,15 @@
   
   .math-services-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .trigonometry-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .trig-topics {
+    flex-direction: column;
+    gap: 1rem;
   }
   
   .cta-section {
@@ -476,14 +524,9 @@
   .pricing-section h2 {
     font-size: 1.7rem;
   }
-}
-@media (max-width: 768px) {
-  .trigonometry-content {
-    grid-template-columns: 1fr;
-  }
   
-  .trig-topics {
-    flex-direction: column;
-    gap: 1rem;
+  .problem-type-card {
+    padding: 1.5rem 1.2rem;
+    min-width: auto;
   }
 }

@@ -163,6 +163,7 @@
 }
 
 /* ============ FORMATTING SECTION ============ */
+/* ============ FORMATTING SECTION ============ */
 .formatting-section {
   margin: 5rem 0;
 }
@@ -172,26 +173,42 @@
   font-size: 2rem;
   margin-bottom: 2.5rem;
   color: #2c3e50;
+  position: relative;
+}
+
+.formatting-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #18bc9c;
 }
 
 .formatting-accordion {
-  max-width: 900px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  padding: 0 1rem;
 }
 
 .format-card {
   background: white;
   border-radius: 8px;
   padding: 2rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-  border-left: 4px solid #2c3e50;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+  width: calc(33.333% - 1.34rem);
+  min-width: 280px;
 }
 
 .format-card h3 {
   color: #2c3e50;
   margin-top: 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .requirements-list {
@@ -335,6 +352,42 @@
 }
 
 /* ============ RESPONSIVE STYLES ============ */
+@media (max-width: 1024px) {
+  .formatting-accordion {
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  .format-card {
+    width: calc(33.333% - 1rem);
+  }
+}
+
+@media (max-width: 1200px) {
+  .formatting-accordion {
+    gap: 1.5rem;
+  }
+  .format-card {
+    width: calc(33.333% - 1rem);
+  }
+}
+
+@media (max-width: 992px) {
+  .format-card {
+    padding: 1.8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .formatting-accordion {
+    flex-wrap: wrap;
+  }
+  .format-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 768px) {
   .essay-hero h1 {
     font-size: 2rem;
@@ -346,6 +399,10 @@
   
   .essay-types-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .formatting-accordion {
+    gap: 1.5rem;
   }
   
   .cta-section {
@@ -371,6 +428,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  .format-card {
+    padding: 1.5rem;
+  }
+}
+
 @media (max-width: 480px) {
   .essay-hero {
     padding: 3rem 1rem;
@@ -384,5 +447,10 @@
   .formatting-section h2,
   .pricing-section h2 {
     font-size: 1.7rem;
+  }
+  
+  .format-card {
+    padding: 1.5rem 1.2rem;
+    min-width: auto;
   }
 }

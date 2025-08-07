@@ -207,9 +207,9 @@ const Business = () => {
           <section className="assignments-section" aria-labelledby="assignments-heading">
             <h2 id="assignments-heading">Assignment Types</h2>
             <p className="section-intro">We specialize in these common business and economics assignments for US students:</p>
-            <div className="assignments-accordion">
+            <div className="assignments-grid-container">
               {assignmentTypes.map((type, index) => (
-                <div key={index} className="assignment-type-card" itemScope itemType="https://schema.org/CreativeWork">
+                <div key={index} className="assignment-grid-card" itemScope itemType="https://schema.org/CreativeWork">
                   <h3 itemProp="name">{type.name}</h3>
                   <div itemProp="description">
                     <h4>What We Deliver:</h4>
