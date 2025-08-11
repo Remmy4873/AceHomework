@@ -26,24 +26,45 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Basic validation
+    if (!formData.name || !formData.email || !formData.message) {
+      setFormStatus({ submitting: false, submitted: false, error: 'Please fill all required fields' });
+      return;
+    }
+
     setFormStatus({ submitting: true, submitted: false, error: null });
 
     try {
-      // Replace with your actual form submission endpoint
-      const response = await fetch('https://yourdomain.com/api/contact', {
+      const response = await fetch('https://formsubmit.co/ajax/reliableassignmentwritter@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({
+          ...formData,
+          _subject: `New Contact: ${formData.subject || 'No Subject'}`,
+          _template: 'table',
+          _captcha: 'false',
+          _autoresponse: `Thank you for contacting us, ${formData.name}! We'll respond within 24 hours.`
+        })
       });
 
-      if (!response.ok) throw new Error('Submission failed');
+      const data = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(data.message || 'Submission failed. Please try again.');
+      }
       
       setFormStatus({ submitting: false, submitted: true, error: null });
       setFormData({ name: '', email: '', subject: '', message: '' });
+      
     } catch (error) {
-      setFormStatus({ submitting: false, submitted: false, error: error.message });
+      setFormStatus({ 
+        submitting: false, 
+        submitted: false, 
+        error: error.message || 'Failed to send message. Please try again later.' 
+      });
     }
   };
 
@@ -73,7 +94,8 @@ const Contact = () => {
               {formStatus.submitted ? (
                 <div className="success-message">
                   <h3>Thank You!</h3>
-                  <p>Your message has been sent successfully. Our team will respond within 24 hours.</p>
+                  <p>Your message has been sent successfully.</p>
+                  <p> Our team will respond within the shortest time.</p>
                   <button 
                     className="primary-button"
                     onClick={() => setFormStatus({...formStatus, submitted: false})}
@@ -83,14 +105,22 @@ const Contact = () => {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="contact-form">
+                  {/* Hidden honeypot field for spam prevention */}
+                  <input 
+                    type="checkbox" 
+                    name="botcheck" 
+                    className="hidden" 
+                    style={{ display: 'none' }} 
+                  />
+                  
                   {formStatus.error && (
                     <div className="error-message">
-                      Error: {formStatus.error}. Please try again.
+                      {formStatus.error}
                     </div>
                   )}
 
                   <div className="form-group">
-                    <label htmlFor="name">Your Name</label>
+                    <label htmlFor="name">Your Name*</label>
                     <input
                       type="text"
                       id="name"
@@ -103,7 +133,7 @@ const Contact = () => {
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="email">Email Address</label>
+                    <label htmlFor="email">Email Address*</label>
                     <input
                       type="email"
                       id="email"
@@ -116,7 +146,7 @@ const Contact = () => {
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="subject">Subject</label>
+                    <label htmlFor="subject">Subject*</label>
                     <select
                       id="subject"
                       name="subject"
@@ -134,7 +164,7 @@ const Contact = () => {
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="message">Your Message</label>
+                    <label htmlFor="message">Your Message*</label>
                     <textarea
                       id="message"
                       name="message"
@@ -152,7 +182,13 @@ const Contact = () => {
                       className="primary-button"
                       disabled={formStatus.submitting}
                     >
-                      {formStatus.submitting ? 'Sending...' : 'Send Message'}
+                      {formStatus.submitting ? (
+                        <>
+                          <span className="spinner"></span> Sending...
+                        </>
+                      ) : (
+                        'Send Message'
+                      )}
                     </button>
                   </div>
                 </form>
@@ -169,7 +205,7 @@ const Contact = () => {
                   </li>
                   <li>
                     <span className="icon">📱</span>
-                    <span>Text: <a href="sms:+18005551234">+1 (800) 555-1234</a></span>
+                    <span>Text: <a href="sms:+19123195285">+1 (912) 319-5285</a></span>
                   </li>
                   <li>
                     <span className="icon">💬</span>
@@ -193,11 +229,11 @@ const Contact = () => {
                 <ul className="response-times">
                   <li>
                     <span className="time">Weekdays:</span>
-                    <span>Within 2 hours</span>
+                    <span>Within 2 minutes</span>
                   </li>
                   <li>
                     <span className="time">Weekends:</span>
-                    <span>Within 4 hours</span>
+                    <span>Within 5 minutes</span>
                   </li>
                   <li>
                     <span className="time">Urgent Requests:</span>
@@ -205,8 +241,6 @@ const Contact = () => {
                   </li>
                 </ul>
               </div>
-
-              
             </aside>
           </div>
         </article>
