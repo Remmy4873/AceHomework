@@ -256,11 +256,8 @@ const Plagiarism = () => {
               <h2>Need Plagiarism Removal Help?</h2>
               <p>Get professional rewriting services to ensure your work passes all plagiarism checks.</p>
               <div className="cta-buttons">
-                <Link to="/order" className="primary-cta">
-                  Order Now - From $15
-                </Link>
-                <Link to="/contact" className="secondary-cta">
-                  Ask About Urgent Requests
+                <Link to="/contact" className="primary-cta">
+                  Order Now - From $8
                 </Link>
               </div>
               <p className="usa-guarantee">🇺🇸 Specializing in US academic integrity standards 🇺🇸</p>

@@ -248,11 +248,8 @@ const Math = () => {
               <h2>Struggling With Trigonometry or Other Math?</h2>
               <p>Get expert help today with comprehensive solutions starting from just $15 per problem.</p>
               <div className="cta-buttons">
-                <Link to="/order" className="primary-cta">
+                <Link to="/contact" className="primary-cta">
                   Order Now - From $15
-                </Link>
-                <Link to="/contact" className="secondary-cta">
-                  Ask About Complex Problems
                 </Link>
               </div>
             </div>

@@ -46,8 +46,8 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About AcademicPro | Premium Assignment Help for US Students</title>
-        <meta name="description" content="AcademicPro completes assignments for US students, delivering Canvas-ready submissions for guaranteed better grades." />
+        <title>About AceHomework | Premium Assignment Help for US Students</title>
+        <meta name="description" content="AceHomework completes assignments for US students, delivering Canvas-ready submissions for guaranteed better grades." />
         <meta name="keywords" content="Canvas assignment help, do my homework, assignment writing service, USA student help, guaranteed grades" />
         <meta property="og:title" content="About AcademicPro | Assignment Completion Service" />
         <meta property="og:description" content="We complete and submit Canvas assignments for US students to improve grades." />
@@ -59,7 +59,7 @@ const About = () => {
       <main className="about-page">
         <article className="about-container">
           <header className="about-hero">
-            <h1>About AcademicPro</h1>
+            <h1>About AceHomework</h1>
             <p className="hero-subtitle">Premium Assignment Completion Service for US Students</p>
             <div className="hero-badges">
               <span className="badge">A+ Quality Work</span>
@@ -72,7 +72,7 @@ const About = () => {
             <div className="mission-content">
               <div className="mission-text">
                 <h2 id="mission-heading">Our Service</h2>
-                <p>AcademicPro specializes in completing academic assignments for US students who need help maintaining or improving their grades. We provide ready-to-submit work formatted specifically for Canvas LMS requirements.</p>
+                <p>AceHomework specializes in completing academic assignments for US students who need help maintaining or improving their grades. We provide ready-to-submit work formatted specifically for Canvas LMS requirements.</p>
                 <p>Our team of subject matter experts delivers high-quality assignments that meet your professor's requirements, helping you achieve better grades without the stress of tight deadlines or complex coursework.</p>
                 <div className="mission-stats">
                   <div className="stat-item">
@@ -157,7 +157,7 @@ const About = () => {
               <h2>Need Better Grades This Semester?</h2>
               <p>Let our experts handle your Canvas assignments while you focus on what matters most.</p>
               <div className="cta-buttons">
-                <Link to="/order" className="primary-cta">
+                <Link to="/contact" className="primary-cta">
                   Order Assignment Help
                 </Link>
                 <Link to="/contact" className="secondary-cta">

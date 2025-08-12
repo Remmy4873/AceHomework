@@ -250,11 +250,8 @@ const CaseStudies = () => {
               <h2>Need a Professional Case Study?</h2>
               <p>Get started today and receive an expertly written case study at just $15 per page.</p>
               <div className="cta-buttons">
-                <Link to="/order" className="primary-cta">
+                <Link to="/contact" className="primary-cta">
                   Order Now - $15/Page
-                </Link>
-                <Link to="/contact" className="secondary-cta">
-                  Request Sample
                 </Link>
               </div>
             </div>

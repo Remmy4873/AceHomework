@@ -204,11 +204,8 @@ const ResearchPapers = () => {
               <h2>Ready to Order Your Research Paper?</h2>
               <p>Get started today and receive a well-researched, properly formatted paper at just $15 per page.</p>
               <div className="cta-buttons">
-                <Link to="/order" className="primary-cta">
+                <Link to="/contact" className="primary-cta">
                   Order Now - $15/Page
-                </Link>
-                <Link to="/contact" className="secondary-cta">
-                  Ask About Bulk Discounts
                 </Link>
               </div>
             </div>

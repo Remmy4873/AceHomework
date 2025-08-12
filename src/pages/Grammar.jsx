@@ -238,11 +238,8 @@ const Grammar = () => {
               <h2>Need Professional Grammar Checking?</h2>
               <p>Improve your academic writing with our expert proofreading services. Perfect for American students at all levels.</p>
               <div className="cta-buttons">
-                <Link to="/order" className="primary-cta">
-                  Order Now - From $10
-                </Link>
-                <Link to="/contact" className="secondary-cta">
-                  Ask About Bulk Discounts
+                <Link to="/contact" className="primary-cta">
+                  Order Now - From $8
                 </Link>
               </div>
               <p className="usa-guarantee">🇺🇸 Specializing in US academic writing standards 🇺🇸</p>

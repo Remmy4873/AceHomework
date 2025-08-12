@@ -252,11 +252,8 @@ const Sciences = () => {
               <h2>Need Help With Science Assignments?</h2>
               <p>Get started today and receive accurate, well-researched science solutions starting from just $15 per assignment.</p>
               <div className="cta-buttons">
-                <Link to="/order" className="primary-cta">
+                <Link to="/contact" className="primary-cta">
                   Order Now - From $15
-                </Link>
-                <Link to="/contact" className="secondary-cta">
-                  Ask About Complex Labs
                 </Link>
               </div>
             </div>

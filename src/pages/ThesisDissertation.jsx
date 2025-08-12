@@ -250,11 +250,8 @@ const ThesisDissertation = () => {
               <h2>Ready to Start Your Thesis/Dissertation?</h2>
               <p>Get expert help at just $15 per page with guaranteed quality and proper formatting.</p>
               <div className="cta-buttons">
-                <Link to="/order" className="primary-cta">
+                <Link to="/contact" className="primary-cta">
                   Order Now - $15/Page
-                </Link>
-                <Link to="/contact" className="secondary-cta">
-                  Ask About Chapter Pricing
                 </Link>
               </div>
             </div>

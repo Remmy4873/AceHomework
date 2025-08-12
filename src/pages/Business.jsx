@@ -339,9 +339,6 @@ const Business = () => {
               <h2>Need Help With Business or Economics?</h2>
               <p>Get professional assistance with your assignments today. Perfect for American students at all academic levels.</p>
               <div className="cta-buttons">
-                <Link to="/order" className="primary-cta">
-                  Order Now - From $15
-                </Link>
                 <Link to="/contact" className="secondary-cta">
                   Ask About Urgent Deadlines
                 </Link>

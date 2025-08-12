@@ -356,11 +356,8 @@ const Programming = () => {
               <h2>Need Help With Programming Assignments?</h2>
               <p>Get professional assistance from experienced developers. Perfect for American students at all academic levels.</p>
               <div className="cta-buttons">
-                <Link to="/order" className="primary-cta">
-                  Order Now - From $15
-                </Link>
                 <Link to="/contact" className="secondary-cta">
-                  Ask About Complex Projects
+                  Contact for Projects
                 </Link>
               </div>
               <p className="usa-guarantee">🇺🇸 Specializing in US computer science curricula 🇺🇸</p>

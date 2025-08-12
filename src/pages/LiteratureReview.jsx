@@ -281,11 +281,8 @@ const LiteratureReview = () => {
               <h2>Struggling With Your Literature Review?</h2>
               <p>Let our US-based academic experts help you get the grade you deserve at just $15 per page.</p>
               <div className="cta-buttons">
-                <Link to="/order" className="primary-cta">
+                <Link to="/contact" className="primary-cta">
                   Order Now - $15/Page
-                </Link>
-                <Link to="/samples/literature-review" className="secondary-cta">
-                  View Sample
                 </Link>
               </div>
               <p className="guarantee-text">✅ 100% Satisfaction Guarantee | 🔒 Confidential Service</p>

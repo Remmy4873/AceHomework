@@ -204,11 +204,8 @@ const EssayWriting = () => {
               <h2>Ready to Order Your Essay?</h2>
               <p>Get started today and receive a high-quality, perfectly formatted paper at just $15 per page.</p>
               <div className="cta-buttons">
-                <Link to="/order" className="primary-cta">
+                <Link to="/contact" className="primary-cta">
                   Order Now - $15/Page
-                </Link>
-                <Link to="/contact" className="secondary-cta">
-                  Contact Support
                 </Link>
               </div>
             </div>

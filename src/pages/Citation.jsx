@@ -227,11 +227,8 @@ const Citation = () => {
               <h2>Need Perfect Citations?</h2>
               <p>Get professional citation help with guaranteed accuracy in any style.</p>
               <div className="cta-buttons">
-                <Link to="/order" className="primary-cta">
+                <Link to="/contact" className="primary-cta">
                   Order Now - From $8
-                </Link>
-                <Link to="/contact" className="secondary-cta">
-                  Ask About Bulk Discounts
                 </Link>
               </div>
               <p className="usa-guarantee">🇺🇸 Specializing in US academic standards 🇺🇸</p>

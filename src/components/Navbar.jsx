@@ -54,8 +54,7 @@ const Navbar = () => {
         { name: 'Grammar Check', path: '/services/grammar-check' },
         { name: 'Plagiarism Removal', path: '/services/plagiarism-removal' },
         { name: 'Formatting', path: '/services/formatting' },
-        { name: 'Citation Help', path: '/services/citation-help' },
-        { name: 'Peer Review', path: '/services/peer-review' }
+        { name: 'Citation Help', path: '/services/citation-help' }
       ]
     }
   ];
@@ -64,7 +63,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          AcademicPro
+          AceHomework
         </Link>
         
         <div className="menu-icon" onClick={handleClick}>

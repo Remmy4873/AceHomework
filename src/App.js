@@ -10,7 +10,7 @@ import Engineering from './pages/Engineering';
 import EssayWriting from './pages/EssayWriting';
 import Formatting from './pages/Formatting';
 import Grammar from './pages/Grammar';
-import Home from './pages/Home';
+import Home from './components/Home';
 import LiteratureReview from './pages/LiteratureReview';
 import Math from './pages/Math';
 import Navbar from './components/Navbar';

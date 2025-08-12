@@ -288,11 +288,8 @@ const Formatting = () => {
               <h2>Need Perfect Paper Formatting?</h2>
               <p>Get professional formatting services to ensure your paper meets all style requirements.</p>
               <div className="cta-buttons">
-                <Link to="/order" className="primary-cta">
-                  Order Now - From $10
-                </Link>
-                <Link to="/contact" className="secondary-cta">
-                  Ask About Complex Projects
+                <Link to="/contact" className="primary-cta">
+                  Order Now - From $8
                 </Link>
               </div>
               <p className="usa-guarantee">🇺🇸 Specializing in US academic style standards 🇺🇸</p>

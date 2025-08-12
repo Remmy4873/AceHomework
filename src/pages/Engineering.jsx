@@ -340,11 +340,8 @@ const Engineering = () => {
               <h2>Need Help With Engineering Assignments?</h2>
               <p>Get professional assistance from qualified engineers. Perfect for American students at all academic levels.</p>
               <div className="cta-buttons">
-                <Link to="/order" className="primary-cta">
+                <Link to="/contact" className="primary-cta">
                   Order Now - From $20
-                </Link>
-                <Link to="/contact" className="secondary-cta">
-                  Ask About Complex Projects
                 </Link>
               </div>
               <p className="usa-guarantee">🇺🇸 Specializing in ABET-aligned US engineering programs 🇺🇸</p>
