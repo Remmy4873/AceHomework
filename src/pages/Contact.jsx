@@ -71,7 +71,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | AcademicPro Assignment Help</title>
+        <title>Contact Us | AceHomework Assignment Help</title>
         <meta name="description" content="Contact our academic support team for assignment help, questions, or service inquiries. Available 24/7 for US students." />
         <meta name="keywords" content="contact academic help, assignment help contact, homework help support, USA student contact" />
         <meta property="og:title" content="Contact AcademicPro | 24/7 Assignment Help Support" />
@@ -83,7 +83,7 @@ const Contact = () => {
       <main className="contact-page">
         <article className="contact-container">
           <header className="contact-header">
-            <h1>Contact AcademicPro</h1>
+            <h1>Contact AceHomework</h1>
             <p className="subtitle">24/7 Support for Your Assignment Needs</p>
           </header>
 
