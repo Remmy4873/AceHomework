@@ -26,7 +26,7 @@ const Home = () => {
                 <span className="stat-label">Satisfaction Rate</span>
               </div>
             </div>
-            <button className="cta-button">Get Started Now</button>
+            <button className="cta-button">Scroll for More</button>
           </div>
         </div>
       </section>
