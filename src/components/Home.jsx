@@ -41,7 +41,7 @@ const Home = () => {
             <div className="feature-card">
               <div className="feature-image-container">
                 <img 
-                  src="https://res.cloudinary.com/dqtzbgvug/image/upload/v1755092661/mkk8zkaoykfnlbudjlwg.jpg" 
+                  src="https://res.cloudinary.com/dqtzbgvug/image/upload/v1755094642/npr7pldilbtpgxjcyicb.jpg" 
                   alt="Top-Tier Experts" 
                   className="feature-image"
                   loading="lazy"
@@ -69,7 +69,7 @@ const Home = () => {
                   loading="lazy"
                 />
               </div>
-              <h3>Student's Satisfaction</h3>
+              <h3>Quality Grades</h3>
             </div>
             <div className="feature-card">
               <div className="feature-image-container">
