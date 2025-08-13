@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import "./WhatsApp.css"; // Import styles
 
 const WhatsAppBubble = () => {
-  const whatsappNumber = "254705216749";
+  const whatsappNumber = "19123195285";
 
   const openWhatsApp = () => {
     window.open(

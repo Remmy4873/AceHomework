@@ -45,21 +45,21 @@ const Grammar = () => {
       description: "Technical grammar checking for academic research papers and publications",
       features: ["Citation formatting", "Technical terminology", "Complex sentence analysis", "Journal style compliance"],
       icon: "📄",
-      price: "From $15"
+      price: "From $10"
     },
     {
       name: "Admissions Proofreading",
       description: "Polishing college applications, personal statements, and recommendation letters",
       features: ["Tone adjustment", "Clarity enhancement", "Impactful phrasing", "Error-free writing"],
       icon: "🎓",
-      price: "From $20"
+      price: "From $15"
     },
     {
       name: "Business Writing Review",
       description: "Professional editing for business communications and formal documents",
       features: ["Formal tone", "Professional phrasing", "Conciseness", "Industry terminology"],
       icon: "💼",
-      price: "From $12"
+      price: "From $15"
     }
   ];
 
@@ -110,7 +110,7 @@ const Grammar = () => {
         <article className="grammar-container">
           <header className="grammar-hero">
             <h1>Academic Grammar Checking</h1>
-            <p className="hero-subtitle">Starting from <strong>$10 per paper</strong> - Trusted by <strong>US Students</strong></p>
+            <p className="hero-subtitle">Starting from <strong>$8 per paper</strong> - Trusted by <strong>US Students</strong></p>
             <div className="hero-badges">
               <span className="badge">English Experts</span>
               <span className="badge">24-48 Hour Turnaround</span>
@@ -186,7 +186,7 @@ const Grammar = () => {
               </div>
               <div className="pricing-card">
                 <h3>College Level</h3>
-                <div className="price">From $15 <span>per paper</span></div>
+                <div className="price">From $10 <span>per paper</span></div>
                 <ul className="pricing-features">
                   <li>Advanced grammar checking</li>
                   <li>Academic style improvement</li>
@@ -196,7 +196,7 @@ const Grammar = () => {
               </div>
               <div className="pricing-card">
                 <h3>University Level</h3>
-                <div className="price">From $20 <span>per paper</span></div>
+                <div className="price">From $10 <span>per paper</span></div>
                 <ul className="pricing-features">
                   <li>Technical writing review</li>
                   <li>Journal style compliance</li>

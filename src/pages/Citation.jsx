@@ -127,7 +127,7 @@ const Citation = () => {
   return (
     <>
       <Helmet>
-        <title>Citation Help | From $8 | Style Examples | AcademicPro</title>
+        <title>Citation Help | From $10 | Style Examples | AcademicPro</title>
         <meta name="description" content="Professional citation help starting from $8 per source with APA, MLA, Chicago, and IEEE examples for US students." />
         <meta name="keywords" content="citation help, APA format, MLA format, Chicago style, IEEE citations, citation examples, USA students" />
         <meta property="og:title" content="Academic Citation Help with Examples | From $8" />
@@ -141,12 +141,12 @@ const Citation = () => {
         <article className="citation-container">
           <header className="citation-hero">
             <h1>Academic Citation Help</h1>
-            <p className="hero-subtitle">Starting from <strong>$8 per source</strong> with <strong>Style Examples</strong></p>
+            <p className="hero-subtitle">Starting from <strong>$8 per page</strong> with <strong>Style Examples</strong></p>
             <div className="hero-badges">
               <span className="badge">100% Accurate</span>
               <span className="badge">Same-Day Service</span>
               <span className="badge">All Major Styles</span>
-              <span className="badge">From $8</span>
+              <span className="badge">From $10</span>
             </div>
           </header>
 
@@ -194,7 +194,7 @@ const Citation = () => {
             <div className="pricing-cards">
               <div className="pricing-card">
                 <h3>Basic Citation</h3>
-                <div className="price">$8 <span>per source</span></div>
+                <div className="price">$8 <span>per page</span></div>
                 <ul className="pricing-features">
                   <li>Standard source types</li>
                   <li>One citation style</li>
@@ -203,7 +203,7 @@ const Citation = () => {
               </div>
               <div className="pricing-card">
                 <h3>Advanced Citation</h3>
-                <div className="price">$12 <span>per source</span></div>
+                <div className="price">$8 <span>per page</span></div>
                 <ul className="pricing-features">
                   <li>Complex source types</li>
                   <li>Multiple style options</li>
@@ -212,7 +212,7 @@ const Citation = () => {
               </div>
               <div className="pricing-card">
                 <h3>Full Paper Citation</h3>
-                <div className="price">$25 <span>per paper</span></div>
+                <div className="price">$8 <span>per page</span></div>
                 <ul className="pricing-features">
                   <li>All citations in paper</li>
                   <li>Reference list included</li>

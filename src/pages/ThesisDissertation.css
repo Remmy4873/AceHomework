@@ -243,6 +243,9 @@
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
   text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
 }
 
 .step-number {
@@ -266,6 +269,7 @@
 .process-step p {
   font-size: 0.9rem;
   color: #666;
+  margin-top: auto;
 }
 
 /* ============ PRICING SECTION ============ */

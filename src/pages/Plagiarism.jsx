@@ -38,28 +38,28 @@ const Plagiarism = () => {
       description: "Complete rewriting of plagiarized content while preserving original meaning",
       features: ["Word-to-word paraphrasing", "Structural reorganization", "Concept preservation", "Original expression"],
       icon: "✏️",
-      price: "From $15"
+      price: "From $10"
     },
     {
       name: "Citation Correction",
       description: "Proper source attribution and citation formatting to eliminate plagiarism",
       features: ["APA/MLA/Chicago style", "In-text citations", "Reference list", "Source verification"],
       icon: "📚",
-      price: "From $12"
+      price: "From $10"
     },
     {
       name: "Similarity Reduction",
       description: "Targeted rewriting to reduce similarity scores in plagiarism checkers",
       features: ["Turnitin optimization", "SafeAssign compatibility", "QuillBot alternative", "AI detection removal"],
       icon: "🔍",
-      price: "From $18"
+      price: "From $10"
     },
     {
       name: "Thesis Paraphrasing",
       description: "Advanced rewriting for graduate-level work with technical accuracy",
       features: ["Academic tone preservation", "Terminology maintenance", "Research integrity", "Publication standards"],
       icon: "🎓",
-      price: "From $25"
+      price: "From $15"
     }
   ];
 
@@ -197,7 +197,7 @@ const Plagiarism = () => {
             <div className="pricing-cards">
               <div className="pricing-card">
                 <h3>High School Level</h3>
-                <div className="price">From $15 <span>per page</span></div>
+                <div className="price">From $10 <span>per page</span></div>
                 <ul className="pricing-features">
                   <li>Basic paraphrasing</li>
                   <li>Citation correction</li>
@@ -207,7 +207,7 @@ const Plagiarism = () => {
               </div>
               <div className="pricing-card">
                 <h3>College Level</h3>
-                <div className="price">From $20 <span>per page</span></div>
+                <div className="price">From $10 <span>per page</span></div>
                 <ul className="pricing-features">
                   <li>Advanced rewriting</li>
                   <li>Technical term handling</li>
@@ -217,7 +217,7 @@ const Plagiarism = () => {
               </div>
               <div className="pricing-card">
                 <h3>University Level</h3>
-                <div className="price">From $25 <span>per page</span></div>
+                <div className="price">From $15 <span>per page</span></div>
                 <ul className="pricing-features">
                   <li>Research-level rewriting</li>
                   <li>Publication standards</li>
@@ -257,7 +257,7 @@ const Plagiarism = () => {
               <p>Get professional rewriting services to ensure your work passes all plagiarism checks.</p>
               <div className="cta-buttons">
                 <Link to="/contact" className="primary-cta">
-                  Order Now - From $8
+                  Order Now - From $10
                 </Link>
               </div>
               <p className="usa-guarantee">🇺🇸 Specializing in US academic integrity standards 🇺🇸</p>

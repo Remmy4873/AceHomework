@@ -52,14 +52,14 @@ const Formatting = () => {
       description: "Chicago/Turabian formatting for history and social sciences",
       features: ["Footnotes/endnotes", "Bibliography", "Title page", "Block quotes"],
       icon: "🏛️",
-      price: "From $12"
+      price: "From $10"
     },
     {
       name: "Thesis Formatting",
       description: "Graduate-level dissertation and thesis formatting",
       features: ["Chapter styles", "Table of contents", "Figure numbering", "Margin compliance"],
       icon: "🎓",
-      price: "From $20"
+      price: "From $10"
     }
   ];
 
@@ -236,7 +236,7 @@ const Formatting = () => {
               </div>
               <div className="pricing-card">
                 <h3>College Level</h3>
-                <div className="price">From $15 <span>per paper</span></div>
+                <div className="price">From $10 <span>per paper</span></div>
                 <ul className="pricing-features">
                   <li>Advanced formatting</li>
                   <li>Footnotes/endnotes</li>
@@ -246,7 +246,7 @@ const Formatting = () => {
               </div>
               <div className="pricing-card">
                 <h3>University Level</h3>
-                <div className="price">From $20 <span>per paper</span></div>
+                <div className="price">From $10 <span>per paper</span></div>
                 <ul className="pricing-features">
                   <li>Thesis/dissertation formatting</li>
                   <li>Chapter styles</li>
@@ -289,7 +289,7 @@ const Formatting = () => {
               <p>Get professional formatting services to ensure your paper meets all style requirements.</p>
               <div className="cta-buttons">
                 <Link to="/contact" className="primary-cta">
-                  Order Now - From $8
+                  Order Now - From $10
                 </Link>
               </div>
               <p className="usa-guarantee">🇺🇸 Specializing in US academic style standards 🇺🇸</p>
