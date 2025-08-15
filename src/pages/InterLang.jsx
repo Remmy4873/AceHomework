@@ -312,9 +312,22 @@ const InternLang = () => {
               <div className="sample-translation">
                 <h3>Sample Translation</h3>
                 <div className="sample-content">
-                  <p><strong>Source (French):</strong> "L'éducation est l'arme la plus puissante pour changer le monde."</p>
-                  <p><strong>Translation:</strong> "Education is the most powerful weapon to change the world."</p>
-                  <p><strong>Note:</strong> Maintained the metaphorical "weapon" while ensuring cultural appropriateness</p>
+                  <div className="translation-text">
+                    <p className="original-text">
+                      <strong>French:</strong> "L'éducation est l'arme la plus puissante pour changer le monde."
+                    </p>
+                    <p className="translated-text">
+                      <strong>English:</strong> "Education is the most powerful weapon to change the world."
+                    </p>
+                  </div>
+                  <div className="translation-notes">
+                    <h4>Translation Notes:</h4>
+                    <ul>
+                      <li>Maintained the metaphorical "weapon" for impact</li>
+                      <li>Adjusted article usage ("the world" vs "le monde")</li>
+                      <li>Preserved the original sentence structure</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -345,7 +358,7 @@ const InternLang = () => {
               </div>
               <div className="pricing-card">
                 <h3>University Level</h3>
-                <div className="price">From $25 <span>per assignment</span></div>
+                <div className="price">From $20 <span>per assignment</span></div>
                 <ul className="pricing-features">
                   <li>Advanced grammar</li>
                   <li>Academic papers</li>

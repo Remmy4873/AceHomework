@@ -22,8 +22,6 @@
   color: white;
   border-radius: 8px;
   margin: 2rem 0 3rem;
-  position: relative;
-  overflow: hidden;
 }
 
 .internlang-hero h1 {
@@ -36,7 +34,6 @@
   font-size: 1.3rem;
   max-width: 800px;
   margin: 0 auto 1.5rem;
-  opacity: 0.9;
 }
 
 .hero-subtitle strong {
@@ -56,7 +53,6 @@
   padding: 8px 20px;
   border-radius: 50px;
   font-weight: 600;
-  backdrop-filter: blur(5px);
 }
 
 /* ============ LANGUAGE SUBJECTS SECTION ============ */
@@ -101,13 +97,7 @@
   border-radius: 8px;
   padding: 2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #eee;
-}
-
-.internlang-subject-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .subject-header {
@@ -175,7 +165,7 @@
   border-top: 1px dashed #eee;
 }
 
-/* ============ ASSIGNMENTS SECTION (2x2 GRID) ============ */
+/* ============ ASSIGNMENTS SECTION ============ */
 .assignments-section {
   margin: 5rem 0;
 }
@@ -437,12 +427,64 @@
   border-radius: 6px;
 }
 
-.sample-content p {
-  margin: 0.8rem 0;
+.translation-text {
+  margin-bottom: 1.5rem;
 }
 
-.sample-content p strong {
+.original-text, .translated-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  color: #333;
+}
+
+.original-text {
+  border-left: 3px solid #3498db;
+}
+
+.translated-text {
+  border-left: 3px solid #e74c3c;
+}
+
+.original-text strong, .translated-text strong {
   color: #2c3e50;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.translation-notes {
+  background: #f0f7ff;
+  padding: 1rem;
+  border-radius: 4px;
+  border-left: 3px solid #18bc9c;
+}
+
+.translation-notes h4 {
+  color: #2c3e50;
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.translation-notes ul {
+  padding-left: 1.2rem;
+}
+
+.translation-notes li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.translation-notes li:before {
+  content: '•';
+  color: #18bc9c;
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
 }
 
 /* ============ PRICING SECTION ============ */
@@ -531,7 +573,6 @@
   max-width: 600px;
   margin: 0 auto 2rem;
   font-size: 1.1rem;
-  opacity: 0.9;
 }
 
 .language-guarantee {
@@ -547,34 +588,14 @@
   flex-wrap: wrap;
 }
 
-.primary-cta, .secondary-cta {
+.secondary-cta {
   padding: 12px 30px;
   border-radius: 50px;
   font-weight: 600;
   text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.primary-cta {
-  background: white;
-  color: #2c3e50;
-}
-
-.primary-cta:hover {
-  background: #f0f0f0;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.secondary-cta {
   background: transparent;
   color: white;
   border: 2px solid white;
-}
-
-.secondary-cta:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px);
 }
 
 /* ============ RESPONSIVE STYLES ============ */
@@ -603,22 +624,11 @@
     padding: 2rem 1rem;
   }
   
-  .cta-buttons {
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .primary-cta, .secondary-cta {
-    width: 100%;
-    text-align: center;
-  }
-
-  .pricing-cards {
+  .assignments-grid-container {
     grid-template-columns: 1fr;
   }
 
-  /* Assignment grid responsive */
-  .assignments-grid-container {
+  .pricing-cards {
     grid-template-columns: 1fr;
   }
 }
