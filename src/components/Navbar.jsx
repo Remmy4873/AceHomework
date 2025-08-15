@@ -45,7 +45,8 @@ const Navbar = () => {
         { name: 'Science Assignments', path: '/services/science-assignments' },
         { name: 'Programming Help', path: '/services/programming-help' },
         { name: 'Engineering', path: '/services/engineering-help' },
-        { name: 'Business Studies', path: '/services/business-studies' }
+        { name: 'Business Studies', path: '/services/business-studies' },
+        {name: 'International Languages', path: '/services/languages-assistance' }
       ]
     },
     {

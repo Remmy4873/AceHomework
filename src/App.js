@@ -11,6 +11,7 @@ import EssayWriting from './pages/EssayWriting';
 import Formatting from './pages/Formatting';
 import Grammar from './pages/Grammar';
 import Home from './components/Home';
+import InternationalLanguages from './pages/InterLang';
 import LiteratureReview from './pages/LiteratureReview';
 import Math from './pages/Math';
 import Navbar from './components/Navbar';
@@ -55,6 +56,7 @@ function App() {
             <Route path="/services/plagiarism-removal" element={<Plagiarism />} />
             <Route path="/services/formatting" element={<Formatting />} />
             <Route path="/services/citation-help" element={<Citation />} />
+            <Route path="/services/languages-assistance" element={<InternationalLanguages />} />
           </Route>
           
           {/* 404 Page */}

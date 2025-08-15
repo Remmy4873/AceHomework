@@ -1,0 +1,643 @@
+/* ============ BASE STYLES ============ */
+.internlang-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 0;
+  margin: 0;
+}
+
+.internlang-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============ HERO SECTION ============ */
+.internlang-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  color: white;
+  border-radius: 8px;
+  margin: 2rem 0 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.internlang-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  opacity: 0.9;
+}
+
+.hero-subtitle strong {
+  color: #ffd700;
+}
+
+.hero-badges {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  backdrop-filter: blur(5px);
+}
+
+/* ============ LANGUAGE SUBJECTS SECTION ============ */
+.internlang-subjects-section {
+  margin: 4rem 0;
+}
+
+.internlang-subjects-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  position: relative;
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  color: #555;
+}
+
+.internlang-subjects-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #18bc9c;
+}
+
+.internlang-subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.internlang-subject-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.internlang-subject-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.subject-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 1rem;
+}
+
+.subject-icon {
+  font-size: 1.8rem;
+  margin-top: 3px;
+}
+
+.price-tag {
+  background: #18bc9c;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.internlang-subject-card h3 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.subject-details {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.subject-details h4 {
+  color: #18bc9c;
+  margin: 1.2rem 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.topics-list {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.topics-list li {
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+
+.topics-list li:before {
+  content: '•';
+  color: #18bc9c;
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+.academic-levels {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed #eee;
+}
+
+/* ============ ASSIGNMENTS SECTION (2x2 GRID) ============ */
+.assignments-section {
+  margin: 5rem 0;
+}
+
+.assignments-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.assignments-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.assignment-grid-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #2c3e50;
+}
+
+.assignment-grid-card h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.features-list {
+  padding-left: 1.5rem;
+}
+
+.features-list li {
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.features-list li:before {
+  content: '✓';
+  color: #18bc9c;
+  position: absolute;
+  left: -1.5rem;
+}
+
+.assignment-footer {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* ============ LANGUAGE LEVELS SECTION ============ */
+.language-levels-section {
+  margin: 5rem 0;
+}
+
+.language-levels-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+  position: relative;
+}
+
+.language-levels-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #18bc9c;
+}
+
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.level-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  border-top: 4px solid #3498db;
+}
+
+.level-card h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.level-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.level-concepts, .level-applications {
+  padding: 0.5rem;
+}
+
+.level-concepts h4, .level-applications h4 {
+  color: #18bc9c;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.level-concepts ul, .level-applications ul {
+  padding-left: 1.2rem;
+}
+
+.level-concepts li, .level-applications li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.level-concepts li:before {
+  content: '•';
+  color: #3498db;
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+.level-applications li:before {
+  content: '→';
+  color: #e74c3c;
+  position: absolute;
+  left: -1rem;
+}
+
+/* ============ COURSES SECTION ============ */
+.courses-section {
+  margin: 5rem 0;
+}
+
+.courses-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+  position: relative;
+}
+
+.courses-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #18bc9c;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.course-level-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.course-level-card h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.8rem;
+}
+
+.course-list {
+  padding-left: 1.2rem;
+}
+
+.course-list li {
+  margin-bottom: 0.6rem;
+  position: relative;
+}
+
+.course-list li:before {
+  content: '•';
+  color: #3498db;
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+/* ============ TRANSLATION SECTION ============ */
+.translation-section {
+  margin: 5rem 0;
+}
+
+.translation-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+}
+
+.translation-example {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.process-guide, .sample-translation {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.process-guide {
+  border-left: 4px solid #3498db;
+}
+
+.sample-translation {
+  border-left: 4px solid #e74c3c;
+}
+
+.process-guide h3, .sample-translation h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.translation-steps {
+  padding-left: 1.5rem;
+}
+
+.translation-steps li {
+  margin-bottom: 1rem;
+}
+
+.translation-steps strong {
+  color: #2c3e50;
+}
+
+.sample-content {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+.sample-content p {
+  margin: 0.8rem 0;
+}
+
+.sample-content p strong {
+  color: #2c3e50;
+}
+
+/* ============ PRICING SECTION ============ */
+.pricing-section {
+  margin: 5rem 0;
+}
+
+.pricing-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  border-top: 4px solid #18bc9c;
+}
+
+.pricing-card h3 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #18bc9c;
+  margin: 1rem 0;
+}
+
+.price span {
+  font-size: 1rem;
+  color: #666;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  text-align: left;
+}
+
+.pricing-features li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.pricing-features li:before {
+  content: '✓';
+  color: #18bc9c;
+  position: absolute;
+  left: 0;
+}
+
+/* ============ CTA SECTION ============ */
+.cta-section {
+  background: linear-gradient(135deg, #2c3e50 0%, #18bc9c 100%);
+  border-radius: 8px;
+  padding: 3rem;
+  margin: 4rem 0;
+  color: white;
+  text-align: center;
+}
+
+.cta-content h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.cta-content p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.language-guarantee {
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.primary-cta, .secondary-cta {
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.primary-cta {
+  background: white;
+  color: #2c3e50;
+}
+
+.primary-cta:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-cta {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.secondary-cta:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* ============ RESPONSIVE STYLES ============ */
+@media (max-width: 768px) {
+  .internlang-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .internlang-subjects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .translation-example {
+    grid-template-columns: 1fr;
+  }
+  
+  .level-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-section {
+    padding: 2rem 1rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .primary-cta, .secondary-cta {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Assignment grid responsive */
+  .assignments-grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .internlang-hero {
+    padding: 3rem 1rem;
+  }
+  
+  .internlang-hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .internlang-subjects-section h2, 
+  .assignments-section h2,
+  .language-levels-section h2,
+  .courses-section h2,
+  .translation-section h2,
+  .pricing-section h2 {
+    font-size: 1.7rem;
+  }
+}
