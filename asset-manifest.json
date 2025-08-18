@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/acehomework/static/css/main.dc4c04ec.css",
+    "main.js": "/acehomework/static/js/main.a4cb85ed.js",
+    "static/js/453.16b9f67a.chunk.js": "/acehomework/static/js/453.16b9f67a.chunk.js",
+    "index.html": "/acehomework/index.html",
+    "main.dc4c04ec.css.map": "/acehomework/static/css/main.dc4c04ec.css.map",
+    "main.a4cb85ed.js.map": "/acehomework/static/js/main.a4cb85ed.js.map",
+    "453.16b9f67a.chunk.js.map": "/acehomework/static/js/453.16b9f67a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc4c04ec.css",
+    "static/js/main.a4cb85ed.js"
+  ]
+}
