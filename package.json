@@ -2,6 +2,7 @@
   "name": "writingwebsite",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://acehomeworkk.com",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.6.4",
@@ -21,11 +22,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://Remmy4873.github.io/AceHomework",
   "eslintConfig": {
     "extends": [
       "react-app",
