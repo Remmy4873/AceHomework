@@ -30,7 +30,7 @@ import './App.css';
 function App() {
   return (
     <HelmetProvider>
-      <Router>
+      <Router basename="/">
         <ScrollToTop />
         <Navbar />
         <Routes>
