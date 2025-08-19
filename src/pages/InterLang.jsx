@@ -11,8 +11,8 @@ const InternLang = () => {
     "serviceType": "Foreign Language Academic Assistance",
     "provider": {
       "@type": "Organization",
-      "name": "AcademicPro",
-      "url": "https://yourdomain.com"
+      "name": "AceHomework",
+      "url": "https://acehomeworkk.com"
     },
     "description": "Professional foreign language help starting from $15 per assignment for students in high school, college, and university.",
     "offers": {
@@ -173,13 +173,14 @@ const InternLang = () => {
   return (
     <>
       <Helmet>
-        <title>Foreign Language Help | From $15 | AcademicPro</title>
+        <title>Foreign Language Help | From $15 | AceHomework</title>
         <meta name="description" content="Expert foreign language assignment help starting from $15 for high school, college, and university students. Essay writing, translation, and oral proficiency assistance." />
         <meta name="keywords" content="foreign language help, French homework, Spanish assignment, German writing, Chinese translation, language tutor, $15 language help" />
         <meta property="og:title" content="Foreign Language Academic Help | From $15" />
         <meta property="og:description" content="Professional foreign language assistance for students in high school, college and university programs worldwide." />
-        <meta property="og:url" content="https://yourdomain.com/services/languages" />
+        <meta property="og:url" content="https://acehomeworkk.com/services/languages" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://acehomeworkk.com/services/languages" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

@@ -11,8 +11,8 @@ const LiteratureReview = () => {
     "serviceType": "Literature Review Writing Service",
     "provider": {
       "@type": "Organization",
-      "name": "AcademicPro",
-      "url": "https://yourdomain.com",
+      "name": "AceHomework",
+      "url": "https://acehomeworkk.com",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "US"
@@ -132,12 +132,13 @@ const LiteratureReview = () => {
         <title>Literature Review Writing Service for US College Students | $15/Page</title>
         <meta name="description" content="Get A+ quality literature reviews for your US college courses at $15 per page. Expert writers familiar with APA, MLA, Chicago styles. 24/7 support for students." />
         <meta name="keywords" content="literature review service, college paper help, US students, APA literature review, cheap academic writing, $15 per page" />
-        <meta property="og:title" content="Literature Review Help for US College Students | $15/Page | AcademicPro" />
+        <meta property="og:title" content="Literature Review Help for US College Students | $15/Page | AceHomework" />
         <meta property="og:description" content="Professional literature review writing service tailored for American university students at only $15 per page." />
-        <meta property="og:url" content="https://yourdomain.com/services/literature-review" />
+        <meta property="og:url" content="https://acehomeworkk.com/services/literature-review" />
         <meta property="og:type" content="website" />
         <meta name="geo.region" content="US" />
         <meta name="geo.placename" content="United States" />
+        <link rel="canonical" href="https://acehomeworkk.com/services/literature-review" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

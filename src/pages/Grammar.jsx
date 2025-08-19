@@ -10,8 +10,8 @@ const Grammar = () => {
     "serviceType": "Grammar Checking Service",
     "provider": {
       "@type": "Organization",
-      "name": "AcademicPro",
-      "url": "https://yourdomain.com"
+      "name": "AceHomework",
+      "url": "https://acehomeworkk.com"
     },
     "description": "Professional grammar checking starting from $10 per paper for US students in high school, college, and university levels.",
     "offers": {
@@ -96,13 +96,14 @@ const Grammar = () => {
   return (
     <>
       <Helmet>
-        <title>Grammar Check Service | From $10 | USA Students | AcademicPro</title>
+        <title>Grammar Check Service | From $10 | USA Students | AceHomework</title>
         <meta name="description" content="Professional grammar checking starting from $10 for US high school, college, and university students. Essay proofreading, research paper editing, and admissions proofreading." />
         <meta name="keywords" content="grammar check, essay proofreading, research paper editing, college application help, writing improvement, USA students, affordable editing" />
         <meta property="og:title" content="Grammar Check Service for USA Students | From $10" />
         <meta property="og:description" content="Professional grammar checking and proofreading for American students at all academic levels." />
-        <meta property="og:url" content="https://yourdomain.com/services/grammar" />
+        <meta property="og:url" content="https://acehomeworkk.com/services/grammar" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://acehomeworkk.com/services/grammar" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

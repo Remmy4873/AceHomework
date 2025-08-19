@@ -11,8 +11,8 @@ const ResearchPapers = () => {
     "serviceType": "Research Paper Writing Service",
     "provider": {
       "@type": "Organization",
-      "name": "AcademicPro",
-      "url": "https://yourdomain.com"
+      "name": "AceHomework",
+      "url": "https://acehomeworkk.com"
     },
     "description": "Professional research paper writing service at $15 per page in all formats (APA, MLA, Chicago, Harvard) with quality guarantees.",
     "offers": {
@@ -107,13 +107,14 @@ const ResearchPapers = () => {
   return (
     <>
       <Helmet>
-        <title>Research Paper Writing Service | $15/Page | AcademicPro</title>
+        <title>Research Paper Writing Service | $15/Page | AceHomework</title>
         <meta name="description" content="Get custom research papers at $15 per page written by experts in any format (APA, MLA, Chicago). 100% original research with proper citations." />
         <meta name="keywords" content="research paper service, $15 per page, APA research papers, MLA format, academic writing" />
-        <meta property="og:title" content="Professional Research Paper Service | Only $15/Page | AcademicPro" />
+        <meta property="og:title" content="Professional Research Paper Service | Only $15/Page | AceHomework" />
         <meta property="og:description" content="Premium research papers at $15 per page in all academic formats with quality guarantees." />
-        <meta property="og:url" content="https://yourdomain.com/services/research-papers" />
+        <meta property="og:url" content="https://acehomeworkk.com/services/research-papers" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://acehomeworkk.com/services/research-papers" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

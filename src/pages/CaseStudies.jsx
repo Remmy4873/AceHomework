@@ -11,8 +11,8 @@ const CaseStudies = () => {
     "serviceType": "Case Study Writing Service",
     "provider": {
       "@type": "Organization",
-      "name": "AcademicPro",
-      "url": "https://yourdomain.com"
+      "name": "AceHomework",
+      "url": "https://acehomeworkk.com"
     },
     "description": "Professional case study writing at $15 per page with expert analysis, proper formatting, and comprehensive research support.",
     "offers": {
@@ -127,13 +127,14 @@ const CaseStudies = () => {
   return (
     <>
       <Helmet>
-        <title>Case Study Writing Service | $15/Page | AcademicPro</title>
+        <title>Case Study Writing Service | $15/Page | AceHomework</title>
         <meta name="description" content="Professional case study writing at $15 per page with expert analysis and proper formatting for business, medical, legal, and psychology cases." />
         <meta name="keywords" content="case study writing service, business case studies, medical case reports, legal case analysis, $15 per page" />
-        <meta property="og:title" content="Case Study Writing Service | $15/Page | AcademicPro" />
+        <meta property="og:title" content="Case Study Writing Service | $15/Page | AceHomework" />
         <meta property="og:description" content="Get professionally written case studies at only $15 per page with expert analysis and proper formatting." />
-        <meta property="og:url" content="https://yourdomain.com/services/case-studies" />
+        <meta property="og:url" content="https://acehomeworkk.com/services/case-studies" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://acehomeworkk.com/services/case-studies" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

@@ -10,8 +10,8 @@ const Citation = () => {
     "serviceType": "Academic Citation Help",
     "provider": {
       "@type": "Organization",
-      "name": "AcademicPro",
-      "url": "https://yourdomain.com"
+      "name": "AceHomework",
+      "url": "https://acehomeworkk.com"
     },
     "description": "Professional citation help starting from $8 per source for US students. APA, MLA, Chicago, and IEEE formatting examples included.",
     "offers": {
@@ -127,13 +127,14 @@ const Citation = () => {
   return (
     <>
       <Helmet>
-        <title>Citation Help | From $10 | Style Examples | AcademicPro</title>
+        <title>Citation Help | From $10 | Style Examples | AceHomework</title>
         <meta name="description" content="Professional citation help starting from $8 per source with APA, MLA, Chicago, and IEEE examples for US students." />
         <meta name="keywords" content="citation help, APA format, MLA format, Chicago style, IEEE citations, citation examples, USA students" />
         <meta property="og:title" content="Academic Citation Help with Examples | From $8" />
         <meta property="og:description" content="Professional citation formatting service with style examples for American students." />
-        <meta property="og:url" content="https://yourdomain.com/services/citation" />
+        <meta property="og:url" content="https://acehomeworkk.com/services/citation" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://acehomeworkk.com/services/citation" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

@@ -7,8 +7,9 @@ const About = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
-    "name": "AcademicPro",
-    "url": "https://yourdomain.com",
+    "@id": "https://acehomeworkk.com/about#organization",
+    "name": "AceHomework",
+    "url": "https://acehomeworkk.com",
     "description": "Professional assignment completion service for US students to achieve top grades on Canvas submissions.",
     "address": {
       "@type": "PostalAddress",
@@ -47,20 +48,43 @@ const About = () => {
     <>
       <Helmet>
         <title>About AceHomework | Premium Assignment Help for US Students</title>
-        <meta name="description" content="AceHomework completes assignments for US students, delivering Canvas-ready submissions for guaranteed better grades." />
-        <meta name="keywords" content="Canvas assignment help, do my homework, assignment writing service, USA student help, guaranteed grades" />
-        <meta property="og:title" content="About AcademicPro | Assignment Completion Service" />
-        <meta property="og:description" content="We complete and submit Canvas assignments for US students to improve grades." />
-        <meta property="og:url" content="https://yourdomain.com/about" />
+        <meta
+          name="description"
+          content="AceHomework completes assignments for US students, delivering Canvas-ready submissions for guaranteed better grades."
+        />
+        <meta
+          name="keywords"
+          content="Canvas assignment help, do my homework, assignment writing service, USA student help, guaranteed grades"
+        />
+        <meta
+          property="og:title"
+          content="About AceHomework | Assignment Completion Service"
+        />
+        <meta
+          property="og:description"
+          content="We complete and submit Canvas assignments for US students to improve grades."
+        />
+        <meta
+          property="og:url"
+          content="https://acehomeworkk.com/about"
+        />
         <meta property="og:type" content="website" />
-        <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
+        <link
+          rel="canonical"
+          href="https://acehomeworkk.com/about"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
       </Helmet>
 
       <main className="about-page">
         <article className="about-container">
           <header className="about-hero">
             <h1>About AceHomework</h1>
-            <p className="hero-subtitle">Premium Assignment Completion Service for US Students</p>
+            <p className="hero-subtitle">
+              Premium Assignment Completion Service for US Students
+            </p>
             <div className="hero-badges">
               <span className="badge">A+ Quality Work</span>
               <span className="badge">Canvas Experts</span>
@@ -72,8 +96,18 @@ const About = () => {
             <div className="mission-content">
               <div className="mission-text">
                 <h2 id="mission-heading">Our Service</h2>
-                <p>AceHomework specializes in completing academic assignments for US students who need help maintaining or improving their grades. We provide ready-to-submit work formatted specifically for Canvas LMS requirements.</p>
-                <p>Our team of subject matter experts delivers high-quality assignments that meet your professor's requirements, helping you achieve better grades without the stress of tight deadlines or complex coursework.</p>
+                <p>
+                  AceHomework specializes in completing academic assignments for
+                  US students who need help maintaining or improving their
+                  grades. We provide ready-to-submit work formatted specifically
+                  for Canvas LMS requirements.
+                </p>
+                <p>
+                  Our team of subject matter experts delivers high-quality
+                  assignments that meet your professor's requirements, helping
+                  you achieve better grades without the stress of tight
+                  deadlines or complex coursework.
+                </p>
                 <div className="mission-stats">
                   <div className="stat-item">
                     <div className="stat-number">97%</div>
@@ -90,14 +124,20 @@ const About = () => {
                 </div>
               </div>
               <div className="mission-image">
-                <img src="https://res.cloudinary.com/dqtzbgvug/image/upload/v1754553297/mlxhgiabt6zzvgkb977q.jpg" alt="Canvas assignment submission interface" loading="lazy" />
+                <img
+                  src="https://res.cloudinary.com/dqtzbgvug/image/upload/v1754553297/mlxhgiabt6zzvgkb977q.jpg"
+                  alt="Canvas assignment submission interface"
+                  loading="lazy"
+                />
               </div>
             </div>
           </section>
 
           <section className="features-section" aria-labelledby="features-heading">
             <h2 id="features-heading">How Our Service Works</h2>
-            <p className="section-intro">We make getting better grades through Canvas submissions simple:</p>
+            <p className="section-intro">
+              We make getting better grades through Canvas submissions simple:
+            </p>
             <div className="features-grid">
               {serviceFeatures.map((feature, index) => (
                 <div key={index} className="feature-card">
@@ -111,7 +151,9 @@ const About = () => {
 
           <section className="subjects-section" aria-labelledby="subjects-heading">
             <h2 id="subjects-heading">Subjects We Cover</h2>
-            <p className="section-intro">Comprehensive assignment help across all academic disciplines:</p>
+            <p className="section-intro">
+              Comprehensive assignment help across all academic disciplines:
+            </p>
             <div className="subjects-grid">
               <div className="subject-card">
                 <h3>Business & Economics</h3>
@@ -155,7 +197,10 @@ const About = () => {
           <section className="cta-section">
             <div className="cta-content">
               <h2>Need Better Grades This Semester?</h2>
-              <p>Let our experts handle your Canvas assignments while you focus on what matters most.</p>
+              <p>
+                Let our experts handle your Canvas assignments while you focus
+                on what matters most.
+              </p>
               <div className="cta-buttons">
                 <Link to="/contact" className="primary-cta">
                   Order Assignment Help
@@ -164,7 +209,9 @@ const About = () => {
                   Ask About Submissions
                 </Link>
               </div>
-              <p className="usa-guarantee">🇺🇸 Exclusive service for US college students 🇺🇸</p>
+              <p className="usa-guarantee">
+                🇺🇸 Exclusive service for US college students 🇺🇸
+              </p>
             </div>
           </section>
         </article>

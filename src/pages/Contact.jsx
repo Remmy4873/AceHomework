@@ -74,10 +74,11 @@ const Contact = () => {
         <title>Contact Us | AceHomework Assignment Help</title>
         <meta name="description" content="Contact our academic support team for assignment help, questions, or service inquiries. Available 24/7 for US students." />
         <meta name="keywords" content="contact academic help, assignment help contact, homework help support, USA student contact" />
-        <meta property="og:title" content="Contact AcademicPro | 24/7 Assignment Help Support" />
+        <meta property="og:title" content="Contact AceHomework | 24/7 Assignment Help Support" />
         <meta property="og:description" content="Get in touch with our academic support team for all your assignment help needs." />
-        <meta property="og:url" content="https://yourdomain.com/contact" />
+        <meta property="og:url" content="https://acehomeworkk.com/contact" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://acehomeworkk.com/contact" />
       </Helmet>
 
       <main className="contact-page">

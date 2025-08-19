@@ -10,8 +10,8 @@ const Programming = () => {
     "serviceType": "Programming Academic Assistance",
     "provider": {
       "@type": "Organization",
-      "name": "AcademicPro",
-      "url": "https://yourdomain.com"
+      "name": "AceHomework",
+      "url": "https://acehomeworkk.com"
     },
     "description": "Professional programming help starting from $15 per assignment for US students in high school, college, and university levels.",
     "offers": {
@@ -175,13 +175,14 @@ const Programming = () => {
   return (
     <>
       <Helmet>
-        <title>Programming Help | From $15 | USA Students | AcademicPro</title>
+        <title>Programming Help | From $15 | USA Students | AceHomework</title>
         <meta name="description" content="Expert programming assignment help starting from $15 for US high school, college, and university students. Web development, Python, Java, and algorithm solutions." />
         <meta name="keywords" content="programming help, coding assignment help, web development help, Python programming, Java homework, React help, USA students, affordable coding help" />
         <meta property="og:title" content="Programming Help for USA Students | From $15" />
         <meta property="og:description" content="Professional programming assignment assistance for American students at all academic levels." />
-        <meta property="og:url" content="https://yourdomain.com/services/programming" />
+        <meta property="og:url" content="https://acehomeworkk.com/services/programming" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://acehomeworkk.com/services/programming" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

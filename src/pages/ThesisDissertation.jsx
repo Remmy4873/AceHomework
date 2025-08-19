@@ -11,8 +11,8 @@ const ThesisDissertation = () => {
     "serviceType": "Thesis/Dissertation Writing Service",
     "provider": {
       "@type": "Organization",
-      "name": "AcademicPro",
-      "url": "https://yourdomain.com"
+      "name": "AceHomework",
+      "url": "https://acehomeworkk.com"
     },
     "description": "Professional thesis and dissertation writing at $15 per page with expert formatting (APA, MLA, Chicago) and comprehensive research support.",
     "offers": {
@@ -127,13 +127,14 @@ const ThesisDissertation = () => {
   return (
     <>
       <Helmet>
-        <title>Thesis/Dissertation Writing Service | $15/Page | AcademicPro</title>
+        <title>Thesis/Dissertation Writing Service | $15/Page | AceHomework</title>
         <meta name="description" content="Professional thesis and dissertation writing at $15 per page with expert formatting and comprehensive research support." />
         <meta name="keywords" content="thesis writing service, dissertation help, $15 per page, PhD dissertation, masters thesis" />
-        <meta property="og:title" content="Thesis/Dissertation Writing Service | $15/Page | AcademicPro" />
+        <meta property="og:title" content="Thesis/Dissertation Writing Service | $15/Page | AceHomework" />
         <meta property="og:description" content="Get expert thesis and dissertation help at only $15 per page with proper academic formatting." />
-        <meta property="og:url" content="https://yourdomain.com/services/thesis-dissertation" />
+        <meta property="og:url" content="https://acehomeworkk.com/services/thesis-dissertation" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://acehomeworkk.com/services/thesis-dissertation" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

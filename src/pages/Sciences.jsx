@@ -11,8 +11,8 @@ const Sciences = () => {
     "serviceType": "Science Academic Assistance",
     "provider": {
       "@type": "Organization",
-      "name": "AcademicPro",
-      "url": "https://yourdomain.com"
+      "name": "AceHomework",
+      "url": "https://acehomeworkk.com"
     },
     "description": "Professional science help starting from $15 per assignment with lab reports, research papers, and step-by-step explanations across all scientific disciplines.",
     "offers": {
@@ -118,13 +118,14 @@ const Sciences = () => {
   return (
     <>
       <Helmet>
-        <title>Science Help | From $15 | Biology, Chemistry, Physics | AcademicPro</title>
+        <title>Science Help | From $15 | Biology, Chemistry, Physics | AceHomework</title>
         <meta name="description" content="Get expert science help starting from $15 per assignment. Biology, Chemistry, Physics assistance with lab reports, research papers, and case studies." />
         <meta name="keywords" content="science help, biology assistance, chemistry help, physics solutions, lab report writing, $15 science help" />
         <meta property="og:title" content="Professional Science Help | STEM Subjects | From $15" />
         <meta property="og:description" content="Expert science solutions starting from $15 with detailed explanations across all scientific disciplines." />
-        <meta property="og:url" content="https://yourdomain.com/services/sciences" />
+        <meta property="og:url" content="https://acehomeworkk.com/services/sciences" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://acehomeworkk.com/services/sciences" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

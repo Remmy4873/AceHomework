@@ -10,8 +10,8 @@ const Formatting = () => {
     "serviceType": "Academic Formatting Service",
     "provider": {
       "@type": "Organization",
-      "name": "AcademicPro",
-      "url": "https://yourdomain.com"
+      "name": "AceHomework",
+      "url": "https://acehomeworkk.com"
     },
     "description": "Professional academic paper formatting starting from $10 per paper for US students in high school, college, and university levels.",
     "offers": {
@@ -123,13 +123,14 @@ const Formatting = () => {
   return (
     <>
       <Helmet>
-        <title>Paper Formatting Service | From $10 | USA Students | AcademicPro</title>
+        <title>Paper Formatting Service | From $10 | USA Students | AceHomework</title>
         <meta name="description" content="Professional academic formatting starting from $10 for US high school, college, and university students. APA, MLA, Chicago, and thesis formatting." />
         <meta name="keywords" content="paper formatting, APA formatting, MLA help, Chicago style, thesis formatting, USA students, affordable formatting" />
         <meta property="og:title" content="Academic Formatting Service for USA Students | From $10" />
         <meta property="og:description" content="Professional paper formatting assistance for American students at all academic levels." />
-        <meta property="og:url" content="https://yourdomain.com/services/formatting" />
+        <meta property="og:url" content="https://acehomeworkk.com/services/formatting" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://acehomeworkk.com/services/formatting" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

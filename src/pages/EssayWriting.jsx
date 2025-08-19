@@ -8,11 +8,16 @@ const EssayWriting = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": "https://acehomeworkk.com/services/essay-writing#service",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://acehomeworkk.com/services/essay-writing"
+    },
     "serviceType": "Essay Writing Service",
     "provider": {
       "@type": "Organization",
-      "name": "AcademicPro",
-      "url": "https://yourdomain.com"
+      "name": "AceHomework",
+      "url": "https://acehomeworkk.com"
     },
     "description": "Professional essay writing service offering custom essays at $15 per page in all formats (APA, MLA, Chicago, Harvard) with quality guarantees.",
     "offers": {
@@ -107,13 +112,32 @@ const EssayWriting = () => {
   return (
     <>
       <Helmet>
-        <title>Professional Essay Writing Service | $15/Page | AcademicPro</title>
-        <meta name="description" content="Get custom essays at $15 per page written by PhD experts in any format (APA, MLA, Chicago, Harvard). 100% original, on-time delivery with free revisions." />
-        <meta name="keywords" content="essay writing service, $15 per page essays, APA format, MLA style, cheap essay writing" />
-        <meta property="og:title" content="Professional Essay Writing Service | Only $15/Page | AcademicPro" />
-        <meta property="og:description" content="Premium essay writing at $15 per page in all academic formats with quality guarantees." />
-        <meta property="og:url" content="https://yourdomain.com/services/essay-writing" />
+        <title>Professional Essay Writing Service | $15/Page | AceHomework</title>
+        <meta
+          name="description"
+          content="Get custom essays at $15 per page written by PhD experts in any format (APA, MLA, Chicago, Harvard). 100% original, on-time delivery with free revisions."
+        />
+        <meta
+          name="keywords"
+          content="essay writing service, $15 per page essays, APA format, MLA style, cheap essay writing"
+        />
+        <meta
+          property="og:title"
+          content="Professional Essay Writing Service | Only $15/Page | AceHomework"
+        />
+        <meta
+          property="og:description"
+          content="Premium essay writing at $15 per page in all academic formats with quality guarantees."
+        />
+        <meta
+          property="og:url"
+          content="https://acehomeworkk.com/services/essay-writing"
+        />
         <meta property="og:type" content="website" />
+        <link
+          rel="canonical"
+          href="https://acehomeworkk.com/services/essay-writing"
+        />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 
@@ -121,7 +145,10 @@ const EssayWriting = () => {
         <article className="essay-writing-container">
           <header className="essay-hero">
             <h1>Professional Essay Writing Service</h1>
-            <p className="hero-subtitle">Only <strong>$15 per page</strong> - Perfectly Formatted Papers in <strong>APA, MLA, Chicago, Harvard</strong></p>
+            <p className="hero-subtitle">
+              Only <strong>$15 per page</strong> - Perfectly Formatted Papers in{" "}
+              <strong>APA, MLA, Chicago, Harvard</strong>
+            </p>
             <div className="hero-badges">
               <span className="badge">100% Original</span>
               <span className="badge">24/7 Support</span>
@@ -134,9 +161,16 @@ const EssayWriting = () => {
             <h2 id="essay-types-heading">Types of Essays We Write</h2>
             <div className="essay-types-grid">
               {essayTypes.map((type, index) => (
-                <div key={index} className="essay-type-card" itemScope itemType="https://schema.org/CreativeWork">
+                <div
+                  key={index}
+                  className="essay-type-card"
+                  itemScope
+                  itemType="https://schema.org/CreativeWork"
+                >
                   <div className="type-header">
-                    <span className="type-icon" aria-hidden="true">{type.icon}</span>
+                    <span className="type-icon" aria-hidden="true">
+                      {type.icon}
+                    </span>
                     <div>
                       <h3 itemProp="name">{type.name}</h3>
                       <div className="price-tag">{type.price}</div>
@@ -147,7 +181,9 @@ const EssayWriting = () => {
                     <h4>Supported Formats:</h4>
                     <ul className="format-list">
                       {type.formats.map((format, i) => (
-                        <li key={i} itemProp="citation">{format}</li>
+                        <li key={i} itemProp="citation">
+                          {format}
+                        </li>
                       ))}
                     </ul>
                     <h4>Common Uses:</h4>
@@ -166,7 +202,12 @@ const EssayWriting = () => {
             <h2 id="formatting-heading">Our Formatting Expertise</h2>
             <div className="formatting-accordion">
               {formattingStyles.map((style, index) => (
-                <div key={index} className="format-card" itemScope itemType="https://schema.org/Article">
+                <div
+                  key={index}
+                  className="format-card"
+                  itemScope
+                  itemType="https://schema.org/Article"
+                >
                   <h3 itemProp="name">{style.name} Format</h3>
                   <div itemProp="articleBody">
                     <h4>Key Requirements:</h4>
@@ -189,7 +230,9 @@ const EssayWriting = () => {
             <h2>Transparent Pricing</h2>
             <div className="pricing-card">
               <h3>Standard Service</h3>
-              <div className="price">$15 <span>per page</span></div>
+              <div className="price">
+                $15 <span>per page</span>
+              </div>
               <ul className="pricing-features">
                 <li>Undergraduate level writing</li>
                 <li>7-day delivery</li>
@@ -202,7 +245,10 @@ const EssayWriting = () => {
           <section className="cta-section">
             <div className="cta-content">
               <h2>Ready to Order Your Essay?</h2>
-              <p>Get started today and receive a high-quality, perfectly formatted paper at just $15 per page.</p>
+              <p>
+                Get started today and receive a high-quality, perfectly formatted
+                paper at just $15 per page.
+              </p>
               <div className="cta-buttons">
                 <Link to="/contact" className="primary-cta">
                   Order Now - $15/Page

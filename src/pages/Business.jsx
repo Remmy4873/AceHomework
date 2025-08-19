@@ -11,8 +11,8 @@ const Business = () => {
     "serviceType": "Business & Economics Academic Assistance",
     "provider": {
       "@type": "Organization",
-      "name": "AcademicPro",
-      "url": "https://yourdomain.com"
+      "name": "AceHomework",
+      "url": "https://acehomeworkk.com"
     },
     "description": "Professional business and economics help starting from $15 per assignment for US students in high school, college, and university.",
     "offers": {
@@ -150,13 +150,14 @@ const Business = () => {
   return (
     <>
       <Helmet>
-        <title>Business & Economics Help | From $15 | USA Students | AcademicPro</title>
+        <title>Business & Economics Help | From $15 | USA Students | AceHomework</title>
         <meta name="description" content="Expert business and economics assignment help starting from $15 for US high school, college, and university students. Case studies, economic analysis, and business plans." />
         <meta name="keywords" content="business assignment help, economics homework, case study writing, business plan help, economic analysis, USA students, $15 business help" />
         <meta property="og:title" content="Business & Economics Help for USA Students | From $15" />
         <meta property="og:description" content="Professional business and economics assignment assistance for American students in high school, college and university programs." />
-        <meta property="og:url" content="https://yourdomain.com/services/business" />
+        <meta property="og:url" content="https://acehomeworkk.com/services/business" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://acehomeworkk.com/services/business" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

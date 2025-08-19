@@ -11,8 +11,8 @@ const Math = () => {
     "serviceType": "Mathematics Academic Assistance",
     "provider": {
       "@type": "Organization",
-      "name": "AcademicPro",
-      "url": "https://yourdomain.com"
+      "name": "AceHomework",
+      "url": "https://acehomeworkk.com"
     },
     "description": "Professional mathematics help starting from $15 per assignment with solutions, proofs, and step-by-step explanations including Trigonometry.",
     "offers": {
@@ -111,13 +111,14 @@ const Math = () => {
   return (
     <>
       <Helmet>
-        <title>Mathematics Help | From $15 | Trigonometry Solutions | AcademicPro</title>
+        <title>Mathematics Help | From $15 | Trigonometry Solutions | AceHomework</title>
         <meta name="description" content="Get expert math help starting from $15 per assignment. Trigonometry solutions, calculus assistance, algebra help with step-by-step explanations." />
         <meta name="keywords" content="math help, trigonometry solutions, calculus assistance, algebra help, statistics solutions, $15 math help" />
         <meta property="og:title" content="Professional Mathematics Help | Trigonometry & More | From $15" />
         <meta property="og:description" content="Expert math solutions including Trigonometry starting from $15 with detailed explanations and proofs for all academic levels." />
-        <meta property="og:url" content="https://yourdomain.com/services/math" />
+        <meta property="og:url" content="https://acehomeworkk.com/services/math" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://acehomeworkk.com/services/math" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

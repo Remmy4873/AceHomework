@@ -10,8 +10,8 @@ const Plagiarism = () => {
     "serviceType": "Plagiarism Removal Service",
     "provider": {
       "@type": "Organization",
-      "name": "AcademicPro",
-      "url": "https://yourdomain.com"
+      "name": "AceHomework",
+      "url": "https://acehomeworkk.com"
     },
     "description": "Professional plagiarism removal and rewriting starting from $15 per page for US students in high school, college, and university levels.",
     "offers": {
@@ -112,13 +112,14 @@ const Plagiarism = () => {
   return (
     <>
       <Helmet>
-        <title>Plagiarism Removal Service | From $15 | USA Students | AcademicPro</title>
+        <title>Plagiarism Removal Service | From $15 | USA Students | AceHomework</title>
         <meta name="description" content="Professional plagiarism removal and rewriting starting from $15 for US high school, college, and university students. Turnitin, SafeAssign, and Copyscape solutions." />
         <meta name="keywords" content="plagiarism removal, rewrite my paper, Turnitin help, SafeAssign solution, plagiarism checker, USA students, affordable rewriting" />
         <meta property="og:title" content="Plagiarism Removal Service for USA Students | From $15" />
         <meta property="og:description" content="Professional plagiarism removal and content rewriting for American students at all academic levels." />
-        <meta property="og:url" content="https://yourdomain.com/services/plagiarism" />
+        <meta property="og:url" content="https://acehomeworkk.com/services/plagiarism" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://acehomeworkk.com/services/plagiarism" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 
