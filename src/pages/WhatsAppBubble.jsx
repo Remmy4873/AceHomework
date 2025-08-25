@@ -1,15 +1,15 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import "./WhatsApp.css"; // Import styles
+import "./WhatsApp.css";
 
 const WhatsAppBubble = () => {
   const whatsappNumber = "17144195200";
+  const encodedMessage = encodeURIComponent("Hello, I'm interested in your writing services!");
 
   const openWhatsApp = () => {
-    window.open(
-      `https://wa.me/${whatsappNumber}?text=Hello,%20I'm%20interested%20in%20your%20writing%20services!`,
-      "_blank"
-    );
+    // Using the direct API link which is more reliable
+    const whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMessage}`;
+    window.open(whatsappURL, "_blank", "noopener,noreferrer");
   };
 
   return (
